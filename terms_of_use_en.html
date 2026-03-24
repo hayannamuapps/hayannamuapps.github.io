@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms and Notices - RouteTracker</title>
+  <link rel="icon" href="route_tracker.png" type="image/png">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h3 {
+      color: #000;
+      font-size: 24px;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 16px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 16px 0;
+      font-size: 13px;
+      color: #555;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <h3><b>RouteTracker Terms of Use</b></h3>
+
+    <ol>
+      <li>
+        'RouteTracker' utilizes the device's location information to provide services. The accuracy of location data may vary depending on the device and environment. All location-based information provided by this app should be used for reference purposes only.
+      </li>
+      <li>
+        'RouteTracker' does not guarantee the accuracy, reliability, completeness, or suitability of location data and provides no warranties to the fullest extent permitted by law. Additionally, 'RouteTracker' is not responsible for any direct or indirect damages or losses resulting from the use of the provided information.
+      </li>
+      <li>
+        'RouteTracker' stores data within the user's device storage. If the app is deleted or an issue occurs, the stored data may be lost.
+      </li>
+      <li>
+        'RouteTracker' utilizes third-party cloud storage for data backup and restoration, which requires user consent. It follows the security policies and access control standards of the respective cloud service providers. 'RouteTracker' assumes no responsibility for cloud service providers' policies, potential changes, service discontinuation, unexpected backup or restoration failures, data corruption, or deletion. Users are responsible for maintaining account security and ensuring that backup files are properly created.
+      </li>
+      <li>
+        'RouteTracker' reserves the right to suspend or terminate the service at any time for any reason, including financial, operational, or technical constraints. Reasonable efforts will be made to provide prior notice where possible, but immediate termination may occur due to unavoidable circumstances. If the app is discontinued, existing data and backup information may no longer be available or restorable, and 'RouteTracker' holds no liability in such cases.
+      </li>
+      <li>
+        By using the 'RouteTracker' service, users agree to these terms and conditions. These terms may be updated as needed, and the revised version will take effect immediately upon release.
+      </li>
+    </ol>
+  </div>
+
+  <div class="footer">
+    © <span id="year"></span> RouteTracker. All rights reserved.
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

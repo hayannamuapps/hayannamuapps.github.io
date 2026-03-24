@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이용 약관 - RouteTracker</title>
+  <link rel="icon" href="route_tracker.png" type="image/png">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h3 {
+      color: #000;
+      font-size: 24px;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 16px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 16px 0;
+      font-size: 13px;
+      color: #555;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <h3><b>이용 약관</b></h3>
+
+    <ol>
+      <li>
+        'RouteTracker'는 기기의 위치 정보를 활용하여 서비스를 제공합니다. 위치 정보는 기기 및 환경에 따라 정확도가 변동될 수 있으며, 본 앱에서 제공하는 모든 위치 기반 정보는 참고용으로만 사용해야 합니다.
+      </li>
+      <li>
+        'RouteTracker'는 위치 데이터의 정확성, 신뢰성, 완전성 및 적합성을 보장하지 않으며, 법률이 허용하는 최대한의 범위 내에서 이에 대한 어떠한 보증도 제공하지 않습니다. 또한, 제공된 정보를 바탕으로 발생한 직·간접적인 손해나 손실에 대해서도 책임을 지지 않습니다.
+      </li>
+      <li>
+        'RouteTracker'는 데이터를 사용자의 기기 내 저장소에 저장하며, 앱 삭제나 문제 발생 시 해당 데이터가 손실될 수 있습니다.
+      </li>
+      <li>
+        'RouteTracker'는 데이터 백업 및 복원을 위해 서드파티 클라우드 저장소를 이용하며, 이에 대한 사용자의 동의가 필요합니다. 클라우드 제공 업체의 보안 정책 및 접근 권한 기준을 따르며, 'RouteTracker'는 이에 대한 책임을 지지 않습니다. 또한, 계정 보안 유지 및 백업 파일의 정상 생성 여부 확인은 사용자의 책임입니다. 클라우드 서비스의 정책 변경, 중단, 또는 예상치 못한 백업/복원 실패, 데이터 손상 및 삭제에 대해서도 'RouteTracker'는 책임을 지지 않습니다.
+      </li>
+      <li>
+        'RouteTracker'는 회사의 경제적, 운영적, 기술적 문제를 포함한 어떠한 이유로든 서비스 운영이 불가능해질 경우, 언제든지 앱을 중단하고 서비스를 종료할 수 있습니다. 합리적으로 가능한 경우 사전 공지를 위해 노력하겠으나, 불가피한 사유로 인해 즉시 종료될 수도 있습니다. 앱이 더 이상 제공되지 않을 경우, 기존 데이터 및 백업된 정보의 유지 또는 복원이 불가능할 수 있으며, 이에 대한 책임을 지지 않습니다.
+      </li>
+      <li>
+        'RouteTracker' 서비스를 이용하는 것은 본 약관에 동의하는 것으로 간주됩니다. 본 약관은 필요에 따라 변경될 수 있으며, 업데이트된 버전은 즉시 효력이 발생합니다.
+      </li>
+    </ol>
+  </div>
+
+  <div class="footer">
+    © <span id="year"></span> RouteTracker. All rights reserved.
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  
+</body>
+</html>
