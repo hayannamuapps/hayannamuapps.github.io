@@ -14,9 +14,7 @@
       --paper: #ffffff;
       --soft: #f5f8fb;
       --teal: #0f766e;
-      --teal-dark: #134e4a;
       --green: #2f7d32;
-      --coral: #c2410c;
       --purple: #6d28d9;
       --shadow: 0 16px 36px rgba(23, 32, 51, 0.12);
     }
@@ -82,6 +80,14 @@
       box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
     }
 
+    .nav-right {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 16px;
+    }
+
     .nav-links {
       display: flex;
       align-items: center;
@@ -93,6 +99,35 @@
     .nav-links a {
       text-decoration: none;
       opacity: 0.92;
+    }
+
+    .language-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      border-radius: 999px;
+      padding: 4px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .language-button {
+      min-width: 42px;
+      min-height: 30px;
+      border: 0;
+      border-radius: 999px;
+      padding: 0 10px;
+      color: rgba(255, 255, 255, 0.82);
+      background: transparent;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .language-button.is-active {
+      color: var(--teal);
+      background: #ffffff;
     }
 
     .hero {
@@ -299,9 +334,14 @@
       padding: 16px;
       background: var(--paper);
       color: var(--ink);
-      font-weight: 800;
       text-decoration: none;
       box-shadow: 0 10px 24px rgba(23, 32, 51, 0.08);
+    }
+
+    .support-link strong {
+      display: block;
+      color: var(--ink);
+      font-weight: 800;
     }
 
     .support-link span {
@@ -336,6 +376,10 @@
         flex-direction: column;
       }
 
+      .nav-right {
+        justify-content: flex-start;
+      }
+
       .hero {
         min-height: 650px;
         background-position: center right 28%;
@@ -363,6 +407,10 @@
         width: min(100% - 28px, 1120px);
       }
 
+      .nav-right {
+        gap: 12px;
+      }
+
       .nav-links {
         flex-wrap: wrap;
         gap: 12px;
@@ -374,8 +422,8 @@
           linear-gradient(180deg, rgba(13, 21, 34, 0.95) 0%, rgba(13, 21, 34, 0.88) 52%, rgba(13, 21, 34, 0.64) 100%),
           url("route_tracker_home_ko.png");
         background-position: center bottom;
-        padding-top: 136px;
-        padding-bottom: 28px;
+        padding-top: 170px;
+        padding-bottom: 18px;
       }
 
       h1 {
@@ -405,95 +453,122 @@
   <header class="site-header">
     <div class="wrap nav">
       <a class="brand" href="index.html">
-        <img src="route_tracker.png" alt="RouteTracker 앱 아이콘">
+        <img src="route_tracker.png" alt="RouteTracker app icon" data-i18n-attr="alt:brandIconAlt">
         <span>RouteTracker</span>
       </a>
-      <nav class="nav-links" aria-label="주요 링크">
-        <a href="privacy.html">개인정보처리방침</a>
-        <a href="terms.html">이용약관</a>
-        <a href="mailto:hayannamuapps@gmail.com">문의</a>
-      </nav>
+      <div class="nav-right">
+        <nav class="nav-links" aria-label="Main links" data-i18n-attr="aria-label:navAria">
+          <a href="privacy.html" data-i18n="navPrivacy">개인정보처리방침</a>
+          <a href="terms.html" data-i18n="navTerms">이용약관</a>
+          <a href="mailto:hayannamuapps@gmail.com" data-i18n="navContact">문의</a>
+        </nav>
+        <div class="language-toggle" aria-label="Language" data-i18n-attr="aria-label:languageAria">
+          <button class="language-button" type="button" data-language-button="ko" lang="ko">KO</button>
+          <button class="language-button" type="button" data-language-button="en" lang="en">EN</button>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="hero" aria-label="RouteTracker 소개">
+    <section class="hero" aria-label="RouteTracker introduction" data-i18n-attr="aria-label:heroAria">
       <div class="wrap">
         <div class="hero-content">
-          <p class="eyebrow">하이킹, 자전거, 러닝 경로 기록</p>
+          <p class="eyebrow" data-i18n="eyebrow">하이킹, 자전거, 러닝 경로 기록</p>
           <h1>RouteTracker</h1>
-          <p class="hero-copy">
+          <p class="hero-copy" data-i18n="heroCopy">
             이동 경로를 기록하고, GPX와 메모를 함께 남기고, Google Drive 백업으로 활동 기록을 직접 관리하세요.
           </p>
           <div class="actions">
             <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play에서 받기">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" data-i18n-attr="alt:playAlt">
             </a>
-            <a class="text-button" href="privacy.html">데이터 처리 방식 보기</a>
+            <a class="text-button" href="privacy.html" data-i18n="dataButton">데이터 처리 방식 보기</a>
           </div>
-          <div class="hero-facts" aria-label="핵심 특징">
-            <div class="hero-fact">회원가입 없이 핵심 기록 시작</div>
-            <div class="hero-fact">기기 기반 기본 저장</div>
-            <div class="hero-fact">Google Drive 백업/복원</div>
-            <div class="hero-fact">Plus/Pro 기능 구분</div>
+          <div class="hero-facts" aria-label="Key features" data-i18n-attr="aria-label:factsAria">
+            <div class="hero-fact" data-i18n="fact1">회원가입 없이 핵심 기록 시작</div>
+            <div class="hero-fact" data-i18n="fact2">기기 기반 기본 저장</div>
+            <div class="hero-fact" data-i18n="fact3">Google Drive 백업/복원</div>
+            <div class="hero-fact" data-i18n="fact4">Plus/Pro 기능 구분</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section aria-label="RouteTracker 기능 흐름">
+    <section aria-label="RouteTracker feature flow" data-i18n-attr="aria-label:flowAria">
       <div class="wrap">
         <div class="section-heading">
-          <h2>먼저 기록하고, 안전하게 보관하고, 다음 활동을 더 잘 준비합니다.</h2>
-          <p class="lead">무료 기록 경험을 기본으로 두고, Plus와 Pro는 기록이 쌓인 뒤 필요한 보관과 분석 기능으로 분리했습니다.</p>
+          <h2 data-i18n="flowHeading">먼저 기록하고, 안전하게 보관하고, 다음 활동을 더 잘 준비합니다.</h2>
+          <p class="lead" data-i18n="flowLead">무료 기록 경험을 기본으로 두고, Plus와 Pro는 기록이 쌓인 뒤 필요한 보관과 분석 기능으로 분리했습니다.</p>
         </div>
         <div class="tier-grid">
           <article class="tier">
-            <span class="tier-label">기본</span>
-            <h3>경로 기록과 복기</h3>
-            <p>활동 기록, 지도, 캘린더, 기본 지표, GPX 가져오기와 내보내기를 중심으로 오늘의 길을 남깁니다.</p>
+            <span class="tier-label" data-i18n="basicLabel">기본</span>
+            <h3 data-i18n="basicTitle">경로 기록과 복기</h3>
+            <p data-i18n="basicBody">활동 기록, 지도, 캘린더, 기본 지표, GPX 가져오기와 내보내기를 중심으로 오늘의 길을 남깁니다.</p>
           </article>
           <article class="tier">
             <span class="tier-label plus">Plus</span>
-            <h3>보관과 보호</h3>
-            <p>광고 제거, 파일 첨부, Google Drive 수동/자동 백업으로 쌓인 활동 기록을 더 오래 보관합니다.</p>
+            <h3 data-i18n="plusTitle">보관과 보호</h3>
+            <p data-i18n="plusBody">광고 제거, 파일 첨부, Google Drive 수동/자동 백업으로 쌓인 활동 기록을 더 오래 보관합니다.</p>
           </article>
           <article class="tier">
             <span class="tier-label pro">Pro</span>
-            <h3>계획과 분석</h3>
-            <p>고급 경로 계획, 오프라인 캐시, 구간 비교, 성장 그래프, Local AI 인사이트로 다음 활동을 준비합니다.</p>
+            <h3 data-i18n="proTitle">계획과 분석</h3>
+            <p data-i18n="proBody">고급 경로 계획, 오프라인 캐시, 구간 비교, 성장 그래프, Local AI 인사이트로 다음 활동을 준비합니다.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section aria-label="개인정보와 데이터 관리">
+    <section aria-label="Privacy and data management" data-i18n-attr="aria-label:privacyAria">
       <div class="wrap privacy-layout">
         <div>
-          <h2>내 기록을 내 방식으로 관리합니다.</h2>
-          <p class="lead">
+          <h2 data-i18n="privacyHeading">내 기록을 내 방식으로 관리합니다.</h2>
+          <p class="lead" data-i18n="privacyLead">
             RouteTracker는 백업을 직접 선택하기 전까지 활동 데이터를 기기에 저장합니다. 백업을 켜면 사용자가 연결한 Google Drive에 스냅샷을 저장합니다.
           </p>
         </div>
         <ul class="privacy-points">
-          <li><strong>위치 기록</strong>현재 위치 표시와 활동 경로 기록을 위해 사용자의 명시적 권한이 필요합니다.</li>
-          <li><strong>Google Drive</strong>Plus 이상에서 백업과 복원을 위해 사용자가 승인한 범위 안에서만 접근합니다.</li>
-          <li><strong>Health Connect</strong>Pro 기능에서 사용자가 허용한 심박수 데이터를 활동 분석에 반영할 수 있습니다.</li>
+          <li>
+            <strong data-i18n="privacyPoint1Title">위치 기록</strong>
+            <span data-i18n="privacyPoint1Body">현재 위치 표시와 활동 경로 기록을 위해 사용자의 명시적 권한이 필요합니다.</span>
+          </li>
+          <li>
+            <strong data-i18n="privacyPoint2Title">Google Drive</strong>
+            <span data-i18n="privacyPoint2Body">Plus 이상에서 백업과 복원을 위해 사용자가 승인한 범위 안에서만 접근합니다.</span>
+          </li>
+          <li>
+            <strong data-i18n="privacyPoint3Title">Health Connect</strong>
+            <span data-i18n="privacyPoint3Body">Pro 기능에서 사용자가 허용한 심박수 데이터를 활동 분석에 반영할 수 있습니다.</span>
+          </li>
         </ul>
       </div>
     </section>
 
-    <section aria-label="지원 링크">
+    <section aria-label="Support links" data-i18n-attr="aria-label:supportAria">
       <div class="wrap">
         <div class="section-heading">
-          <h2>지원과 정책 문서</h2>
-          <p class="lead">앱 사용 전 데이터 처리 방식과 이용 조건을 확인할 수 있습니다.</p>
+          <h2 data-i18n="supportHeading">지원과 정책 문서</h2>
+          <p class="lead" data-i18n="supportLead">앱 사용 전 데이터 처리 방식과 이용 조건을 확인할 수 있습니다.</p>
         </div>
         <div class="support-links">
-          <a class="support-link" href="privacy.html">Privacy Policy<span>개인정보처리방침</span></a>
-          <a class="support-link" href="terms.html">Terms of Use<span>이용약관</span></a>
-          <a class="support-link" href="mailto:hayannamuapps@gmail.com">Contact<span>hayannamuapps@gmail.com</span></a>
-          <a class="support-link" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">Google Play<span>앱 설치 페이지</span></a>
+          <a class="support-link" href="privacy.html">
+            <strong>Privacy Policy</strong>
+            <span data-i18n="supportPrivacySub">개인정보처리방침</span>
+          </a>
+          <a class="support-link" href="terms.html">
+            <strong>Terms of Use</strong>
+            <span data-i18n="supportTermsSub">이용약관</span>
+          </a>
+          <a class="support-link" href="mailto:hayannamuapps@gmail.com">
+            <strong>Contact</strong>
+            <span>hayannamuapps@gmail.com</span>
+          </a>
+          <a class="support-link" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
+            <strong>Google Play</strong>
+            <span data-i18n="supportPlaySub">앱 설치 페이지</span>
+          </a>
         </div>
       </div>
     </section>
@@ -501,14 +576,156 @@
 
   <footer class="footer">
     <div class="wrap">
-      © <span id="year"></span> RouteTracker. All rights reserved.
+      <span data-i18n="footerCopyright">©</span> <span id="year"></span> RouteTracker. All rights reserved.
       <a href="terms.html">Terms</a>
       <a href="privacy.html">Privacy</a>
     </div>
   </footer>
 
   <script>
+    const messages = {
+      ko: {
+        pageTitle: "RouteTracker - 하이킹, 자전거, 러닝 경로 기록",
+        metaDescription: "RouteTracker는 하이킹, 자전거, 러닝 경로를 기록하고 Google Drive 백업과 Local AI 인사이트로 활동을 되돌아보는 안드로이드 앱입니다.",
+        brandIconAlt: "RouteTracker 앱 아이콘",
+        navAria: "주요 링크",
+        navPrivacy: "개인정보처리방침",
+        navTerms: "이용약관",
+        navContact: "문의",
+        languageAria: "언어 선택",
+        heroAria: "RouteTracker 소개",
+        eyebrow: "하이킹, 자전거, 러닝 경로 기록",
+        heroCopy: "이동 경로를 기록하고, GPX와 메모를 함께 남기고, Google Drive 백업으로 활동 기록을 직접 관리하세요.",
+        playAlt: "Google Play에서 받기",
+        dataButton: "데이터 처리 방식 보기",
+        factsAria: "핵심 특징",
+        fact1: "회원가입 없이 핵심 기록 시작",
+        fact2: "기기 기반 기본 저장",
+        fact3: "Google Drive 백업/복원",
+        fact4: "Plus/Pro 기능 구분",
+        flowAria: "RouteTracker 기능 흐름",
+        flowHeading: "먼저 기록하고, 안전하게 보관하고, 다음 활동을 더 잘 준비합니다.",
+        flowLead: "무료 기록 경험을 기본으로 두고, Plus와 Pro는 기록이 쌓인 뒤 필요한 보관과 분석 기능으로 분리했습니다.",
+        basicLabel: "기본",
+        basicTitle: "경로 기록과 복기",
+        basicBody: "활동 기록, 지도, 캘린더, 기본 지표, GPX 가져오기와 내보내기를 중심으로 오늘의 길을 남깁니다.",
+        plusTitle: "보관과 보호",
+        plusBody: "광고 제거, 파일 첨부, Google Drive 수동/자동 백업으로 쌓인 활동 기록을 더 오래 보관합니다.",
+        proTitle: "계획과 분석",
+        proBody: "고급 경로 계획, 오프라인 캐시, 구간 비교, 성장 그래프, Local AI 인사이트로 다음 활동을 준비합니다.",
+        privacyAria: "개인정보와 데이터 관리",
+        privacyHeading: "내 기록을 내 방식으로 관리합니다.",
+        privacyLead: "RouteTracker는 백업을 직접 선택하기 전까지 활동 데이터를 기기에 저장합니다. 백업을 켜면 사용자가 연결한 Google Drive에 스냅샷을 저장합니다.",
+        privacyPoint1Title: "위치 기록",
+        privacyPoint1Body: "현재 위치 표시와 활동 경로 기록을 위해 사용자의 명시적 권한이 필요합니다.",
+        privacyPoint2Title: "Google Drive",
+        privacyPoint2Body: "Plus 이상에서 백업과 복원을 위해 사용자가 승인한 범위 안에서만 접근합니다.",
+        privacyPoint3Title: "Health Connect",
+        privacyPoint3Body: "Pro 기능에서 사용자가 허용한 심박수 데이터를 활동 분석에 반영할 수 있습니다.",
+        supportAria: "지원 링크",
+        supportHeading: "지원과 정책 문서",
+        supportLead: "앱 사용 전 데이터 처리 방식과 이용 조건을 확인할 수 있습니다.",
+        supportPrivacySub: "개인정보처리방침",
+        supportTermsSub: "이용약관",
+        supportPlaySub: "앱 설치 페이지",
+        footerCopyright: "©"
+      },
+      en: {
+        pageTitle: "RouteTracker - Hiking, Cycling, and Running Route Tracker",
+        metaDescription: "RouteTracker is an Android app for recording hiking, cycling, and running routes, managing Google Drive backups, and reviewing activities with Local AI insights.",
+        brandIconAlt: "RouteTracker app icon",
+        navAria: "Main links",
+        navPrivacy: "Privacy",
+        navTerms: "Terms",
+        navContact: "Contact",
+        languageAria: "Language",
+        heroAria: "RouteTracker introduction",
+        eyebrow: "Hiking, cycling, and running route tracking",
+        heroCopy: "Record your route, keep GPX files and notes with each activity, and manage your activity history with Google Drive backup.",
+        playAlt: "Get it on Google Play",
+        dataButton: "See how data is handled",
+        factsAria: "Key features",
+        fact1: "Start core tracking without an account",
+        fact2: "Device-based storage by default",
+        fact3: "Google Drive backup and restore",
+        fact4: "Clear Plus and Pro tiers",
+        flowAria: "RouteTracker feature flow",
+        flowHeading: "Record first, keep it protected, and prepare better for the next activity.",
+        flowLead: "RouteTracker keeps the free tracking experience simple, then separates Plus and Pro into storage, protection, planning, and analysis features.",
+        basicLabel: "Basic",
+        basicTitle: "Track and review routes",
+        basicBody: "Save activities with maps, calendar history, core stats, and GPX import/export for the routes you complete today.",
+        plusTitle: "Keep and protect records",
+        plusBody: "Remove ads, attach files, and keep activity snapshots with manual or automatic Google Drive backup.",
+        proTitle: "Plan and analyze",
+        proBody: "Use advanced route planning, offline cache, segment comparison, growth charts, and Local AI insights to prepare for what comes next.",
+        privacyAria: "Privacy and data management",
+        privacyHeading: "Manage your records your way.",
+        privacyLead: "RouteTracker stores activity data on your device until you choose to back it up. When backup is enabled, snapshots are saved to the Google Drive account you connect.",
+        privacyPoint1Title: "Location tracking",
+        privacyPoint1Body: "Explicit permission is required to show your current location and record activity routes.",
+        privacyPoint2Title: "Google Drive",
+        privacyPoint2Body: "For Plus and higher tiers, RouteTracker accesses only the user-approved scope needed for backup and restore.",
+        privacyPoint3Title: "Health Connect",
+        privacyPoint3Body: "For Pro features, user-approved heart rate data can be reflected in activity analysis.",
+        supportAria: "Support links",
+        supportHeading: "Support and policy documents",
+        supportLead: "Review how data is handled and the terms that apply before using the app.",
+        supportPrivacySub: "Privacy details",
+        supportTermsSub: "Usage terms",
+        supportPlaySub: "App listing",
+        footerCopyright: "©"
+      }
+    };
+
+    const applyLanguage = (language) => {
+      const selected = messages[language] ? language : "en";
+      const dictionary = messages[selected];
+
+      document.documentElement.lang = selected;
+      document.title = dictionary.pageTitle;
+      const description = document.querySelector('meta[name="description"]');
+      if (description) {
+        description.setAttribute("content", dictionary.metaDescription);
+      }
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        if (dictionary[key]) {
+          element.textContent = dictionary[key];
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-attr]").forEach((element) => {
+        element.getAttribute("data-i18n-attr").split(",").forEach((entry) => {
+          const parts = entry.split(":");
+          const attr = parts[0];
+          const key = parts[1];
+          if (attr && key && dictionary[key]) {
+            element.setAttribute(attr, dictionary[key]);
+          }
+        });
+      });
+
+      document.querySelectorAll("[data-language-button]").forEach((button) => {
+        const active = button.getAttribute("data-language-button") === selected;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-pressed", String(active));
+      });
+
+      localStorage.setItem("routeTrackerLanguage", selected);
+    };
+
+    const urlLanguage = new URLSearchParams(window.location.search).get("lang");
+    const savedLanguage = localStorage.getItem("routeTrackerLanguage");
+    const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith("ko") ? "ko" : "en";
+    const initialLanguage = messages[urlLanguage] ? urlLanguage : savedLanguage || browserLanguage;
+
     document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll("[data-language-button]").forEach((button) => {
+      button.addEventListener("click", () => applyLanguage(button.getAttribute("data-language-button")));
+    });
+    applyLanguage(initialLanguage);
   </script>
 </body>
 </html>
