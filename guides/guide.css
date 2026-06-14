@@ -146,7 +146,7 @@ main section {
   padding: 56px 0;
 }
 
-main section:nth-child(odd) {
+main section:not(.hero):nth-child(odd) {
   background: var(--soft);
 }
 
