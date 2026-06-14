@@ -1,0 +1,36 @@
+# RouteTracker
+
+RouteTracker is a mobile app for recording hiking, cycling, running, and walking
+routes, reviewing completed activities, managing GPX files and notes, backing up
+activity snapshots to user-approved Google Drive storage, and using Plus/Pro
+features for attachments, planning, analysis, and on-device Local AI insights.
+
+Current public availability:
+
+- Android: available on Google Play.
+- iPhone/App Store: release information will be added after the App Store launch
+  is public.
+
+Canonical pages:
+
+- Official site: https://hayannamuapps.github.io/
+- Google Play: https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker
+- Privacy policy: https://hayannamuapps.github.io/privacy.html
+- Terms of use: https://hayannamuapps.github.io/terms.html
+
+Key facts:
+
+- Core route recording works without account sign-up.
+- Activity data stays on the device unless the user chooses backup.
+- Google Drive backup and restore use only user-approved access.
+- Plus focuses on ad removal, file attachments, and backup/restore.
+- Pro includes Plus and adds route planning, advanced maps, deeper analysis, and
+  Local AI insights.
+- Local AI insight generation runs on the device after a supported model file is
+  downloaded. Model downloads may contact model hosting providers such as
+  Hugging Face.
+
+Contact: hayannamuapps@gmail.com
+
+Last updated: 2026-06-14
+
