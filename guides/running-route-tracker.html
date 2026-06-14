@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>러닝 경로 기록 앱 RouteTracker - 페이스, 지도, 리캡</title>
+  <meta name="description" content="RouteTracker는 Android에서 러닝 경로를 기록하고 페이스, 거리, 시간, 고도, 캘린더, 리캡 카드, Google Drive 백업, Pro 분석 기능으로 활동을 복기합니다.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://hayannamuapps.github.io/guides/running-route-tracker.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="RouteTracker">
+  <meta property="og:title" content="RouteTracker for Running Route Tracking">
+  <meta property="og:description" content="Record runs on Android with route maps, pace, recap cards, backup, and Pro analysis.">
+  <meta property="og:url" content="https://hayannamuapps.github.io/guides/running-route-tracker.html">
+  <meta property="og:image" content="https://hayannamuapps.github.io/route_tracker_home_en.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RouteTracker for Running Route Tracking">
+  <meta name="twitter:description" content="Android running route tracking with pace, maps, recap cards, backup, and Pro analysis.">
+  <meta name="twitter:image" content="https://hayannamuapps.github.io/route_tracker_home_en.png">
+  <link rel="icon" href="../route_tracker.png" type="image/png">
+  <link rel="stylesheet" href="guide.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://hayannamuapps.github.io/guides/running-route-tracker.html#webpage",
+          "url": "https://hayannamuapps.github.io/guides/running-route-tracker.html",
+          "name": "RouteTracker for running route tracking",
+          "description": "Official RouteTracker guide for recording and reviewing running routes on Android.",
+          "inLanguage": ["ko", "en"],
+          "isPartOf": {"@id": "https://hayannamuapps.github.io/#website"},
+          "about": {"@id": "https://hayannamuapps.github.io/#app"}
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://hayannamuapps.github.io/guides/running-route-tracker.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "RouteTracker는 러닝 경로 기록에 사용할 수 있나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "네. RouteTracker는 Android에서 러닝 경로를 기록하고 거리, 시간, 페이스, 고도, 지도, 캘린더 이력, 리캡 카드와 함께 완료한 활동을 복기할 수 있습니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "러닝 기록을 이미지로 공유할 수 있나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "네. 완료 후 리캡 카드로 경로 지도, 거리, 시간, 고도, 페이스 또는 속도, 대표 메모를 한 장의 이미지로 저장하거나 공유할 수 있습니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html">
+        <img src="../route_tracker.png" alt="RouteTracker app icon">
+        <span>RouteTracker</span>
+      </a>
+      <nav class="nav-links" aria-label="Guide links">
+        <a href="../index.html">Home</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../terms.html">Terms</a>
+        <a href="mailto:hayannamuapps@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="breadcrumb"><a href="../index.html">RouteTracker</a> / Running route tracker</p>
+        <h1>러닝 경로 기록 앱 RouteTracker</h1>
+        <p class="hero-copy">RouteTracker는 러닝 경로를 기록하고 페이스, 거리, 시간, 고도, 리캡 카드로 활동을 복기할 수 있게 돕습니다.</p>
+        <div class="actions">
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+          </a>
+          <a class="text-button" href="../privacy.html">데이터 처리 방식 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>핵심 답변</h2>
+          <p class="lead">러닝 경로 기록 앱을 찾는 사용자를 위한 공식 RouteTracker 설명입니다.</p>
+        </div>
+        <div class="answer-card">
+          <strong>RouteTracker is an Android running route tracker.</strong>
+          <p>It records runs with route maps, pace, distance, time, elevation, calendar history, GPX export, recap cards, backup, and optional Pro analysis features.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>러닝 활동에 맞는 기능</h2>
+          <p class="lead">기록 중 상태 확인과 완료 후 복기에 초점을 둡니다.</p>
+        </div>
+        <div class="fact-grid">
+          <article class="fact-card">
+            <strong>페이스와 경로</strong>
+            <p>러닝 중 거리, 시간, 페이스, 고도 같은 핵심 지표를 확인하고 완료 후 지도에서 경로를 복기합니다.</p>
+          </article>
+          <article class="fact-card">
+            <strong>리캡 카드</strong>
+            <p>완료한 러닝을 경로 지도와 주요 지표가 담긴 이미지 카드로 저장하거나 공유합니다.</p>
+          </article>
+          <article class="fact-card">
+            <strong>반복 기록 분석</strong>
+            <p>Pro 구독에서는 성장 그래프, 구간 비교, Local AI 인사이트로 반복 경로 흐름을 확인할 수 있습니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap two-column">
+        <div>
+          <h2>개인정보 기준</h2>
+          <ul class="check-list">
+            <li>위치 기록은 사용자의 명시적 권한이 필요합니다.</li>
+            <li>활동 데이터는 백업 전까지 기기에 저장됩니다.</li>
+            <li>Google Drive 백업은 사용자가 선택하고 승인한 경우에만 사용됩니다.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>English summary</h2>
+          <p class="lead">RouteTracker records running routes on Android, shows pace and core stats, exports GPX, creates recap cards, and supports Pro analysis for repeated route progress.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>FAQ</h2>
+          <p class="lead">러닝 기록과 공유 기능에 대한 공식 답변입니다.</p>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>RouteTracker는 러닝 경로 기록에 사용할 수 있나요?</summary>
+            <p>네. Android에서 러닝 경로를 기록하고 거리, 시간, 페이스, 고도, 지도, 캘린더 이력과 함께 완료한 활동을 복기할 수 있습니다.</p>
+          </details>
+          <details>
+            <summary>러닝 기록을 이미지로 공유할 수 있나요?</summary>
+            <p>네. 완료 후 리캡 카드로 경로 지도, 거리, 시간, 고도, 페이스 또는 속도, 대표 메모를 한 장의 이미지로 저장하거나 공유할 수 있습니다.</p>
+          </details>
+          <details>
+            <summary>Android 외 플랫폼도 공개됐나요?</summary>
+            <p>현재 공개된 앱은 Android용 Google Play 버전입니다. iPhone 및 App Store 정보는 공개 후 추가합니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span id="year"></span> RouteTracker. All rights reserved.</span>
+      <span class="footer-links">
+        <a href="../privacy.html">Privacy</a>
+        <a href="../terms.html">Terms</a>
+        <a href="../index.html">Home</a>
+      </span>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

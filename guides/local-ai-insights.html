@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local AI 활동 인사이트 RouteTracker - 기기 내 분석</title>
+  <meta name="description" content="RouteTracker Pro는 Android에서 기기 내 Local AI 모델로 속도, 페이스, 고도, 반복 경로 흐름을 요약하고 다음 활동을 위한 참고용 인사이트를 제공합니다.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://hayannamuapps.github.io/guides/local-ai-insights.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="RouteTracker">
+  <meta property="og:title" content="RouteTracker Local AI Activity Insights">
+  <meta property="og:description" content="RouteTracker Pro uses an on-device Local AI model to summarize route activity patterns for reference analysis.">
+  <meta property="og:url" content="https://hayannamuapps.github.io/guides/local-ai-insights.html">
+  <meta property="og:image" content="https://hayannamuapps.github.io/route_tracker_home_en.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RouteTracker Local AI Activity Insights">
+  <meta name="twitter:description" content="On-device Local AI insights for Android route activity analysis in RouteTracker Pro.">
+  <meta name="twitter:image" content="https://hayannamuapps.github.io/route_tracker_home_en.png">
+  <link rel="icon" href="../route_tracker.png" type="image/png">
+  <link rel="stylesheet" href="guide.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://hayannamuapps.github.io/guides/local-ai-insights.html#webpage",
+          "url": "https://hayannamuapps.github.io/guides/local-ai-insights.html",
+          "name": "RouteTracker Local AI activity insights",
+          "description": "Official RouteTracker guide for Pro on-device Local AI activity insights.",
+          "inLanguage": ["ko", "en"],
+          "isPartOf": {"@id": "https://hayannamuapps.github.io/#website"},
+          "about": {"@id": "https://hayannamuapps.github.io/#app"}
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://hayannamuapps.github.io/guides/local-ai-insights.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "RouteTracker의 Local AI 인사이트는 어떤 기능인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "RouteTracker Pro의 Local AI 인사이트는 기기 내 모델로 활동 기록의 속도, 페이스, 고도, 반복 경로 흐름을 요약하고 다음 활동을 위한 참고용 해석을 제공합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Local AI 인사이트는 서버에서 생성되나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "인사이트 생성은 기기에서 실행됩니다. 다만 모델 파일을 다운로드할 때는 Hugging Face 같은 모델 호스팅 제공자에 접속할 수 있습니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html">
+        <img src="../route_tracker.png" alt="RouteTracker app icon">
+        <span>RouteTracker</span>
+      </a>
+      <nav class="nav-links" aria-label="Guide links">
+        <a href="../index.html">Home</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../terms.html">Terms</a>
+        <a href="mailto:hayannamuapps@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="breadcrumb"><a href="../index.html">RouteTracker</a> / Local AI insights</p>
+        <h1>Local AI 활동 인사이트 RouteTracker</h1>
+        <p class="hero-copy">RouteTracker Pro는 활동 기록을 바탕으로 속도, 페이스, 고도, 반복 경로 흐름을 기기 내 Local AI 모델로 요약합니다.</p>
+        <div class="actions">
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+          </a>
+          <a class="text-button" href="../privacy.html">데이터 처리 방식 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>핵심 답변</h2>
+          <p class="lead">Local AI 활동 분석 앱을 찾는 질문에 대한 RouteTracker 공식 설명입니다.</p>
+        </div>
+        <div class="answer-card">
+          <strong>RouteTracker Pro provides on-device Local AI activity insights.</strong>
+          <p>The feature summarizes speed, pace, elevation, and repeated-route patterns on the device. Generated text is reference activity analysis, not medical, safety, or professional training advice.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Local AI가 요약하는 내용</h2>
+          <p class="lead">기록된 활동 데이터를 다음 활동 준비에 사용할 수 있는 문장으로 정리합니다.</p>
+        </div>
+        <div class="fact-grid">
+          <article class="fact-card">
+            <strong>속도와 페이스</strong>
+            <p>활동 흐름에서 속도와 페이스 변화를 요약하고 주요 구간을 참고용으로 설명합니다.</p>
+          </article>
+          <article class="fact-card">
+            <strong>고도와 반복 경로</strong>
+            <p>고도 변화와 반복 경로 기록을 함께 보며 다음 활동 준비에 필요한 맥락을 제공합니다.</p>
+          </article>
+          <article class="fact-card">
+            <strong>기기 내 실행</strong>
+            <p>인사이트 생성은 기기에서 실행되며, 모델 파일은 앱에서 별도로 다운로드하고 관리합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap two-column">
+        <div>
+          <h2>중요한 한계</h2>
+          <ul class="check-list">
+            <li>Local AI 인사이트는 RouteTracker Pro 기능입니다.</li>
+            <li>생성 내용은 참고용 활동 분석이며 전문 코칭, 의료, 안전 판단을 대체하지 않습니다.</li>
+            <li>모델 파일을 받을 때는 Hugging Face 등 모델 호스팅 제공자에 접속할 수 있습니다.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>English summary</h2>
+          <p class="lead">RouteTracker Pro uses an on-device Local AI model to summarize route activity records, including speed, pace, elevation, and repeated-route patterns. Model downloads may contact model hosting providers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>FAQ</h2>
+          <p class="lead">Local AI 인사이트의 동작 방식과 구독 조건에 대한 공식 답변입니다.</p>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>RouteTracker의 Local AI 인사이트는 어떤 기능인가요?</summary>
+            <p>RouteTracker Pro의 Local AI 인사이트는 기기 내 모델로 활동 기록의 속도, 페이스, 고도, 반복 경로 흐름을 요약하고 다음 활동을 위한 참고용 해석을 제공합니다.</p>
+          </details>
+          <details>
+            <summary>Local AI 인사이트는 서버에서 생성되나요?</summary>
+            <p>인사이트 생성은 기기에서 실행됩니다. 다만 모델 파일을 다운로드할 때는 Hugging Face 같은 모델 호스팅 제공자에 접속할 수 있습니다.</p>
+          </details>
+          <details>
+            <summary>Local AI 인사이트는 무료 기능인가요?</summary>
+            <p>아니요. Local AI 인사이트는 RouteTracker Pro 기능입니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span id="year"></span> RouteTracker. All rights reserved.</span>
+      <span class="footer-links">
+        <a href="../privacy.html">Privacy</a>
+        <a href="../terms.html">Terms</a>
+        <a href="../index.html">Home</a>
+      </span>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

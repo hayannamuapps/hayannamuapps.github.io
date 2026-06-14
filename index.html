@@ -501,6 +501,40 @@
       color: var(--muted);
     }
 
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .guide-card {
+      min-height: 132px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(23, 32, 51, 0.08);
+    }
+
+    .guide-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.32;
+    }
+
+    .guide-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
     .support-links {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -577,6 +611,7 @@
 
       .hero-facts,
       .tier-grid,
+      .guide-grid,
       .privacy-layout,
       .support-links {
         grid-template-columns: 1fr;
@@ -759,6 +794,41 @@
       </div>
     </section>
 
+    <section aria-label="RouteTracker use case guides" data-i18n-attr="aria-label:guidesAria">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 data-i18n="guidesHeading">상황별 RouteTracker 공식 가이드</h2>
+          <p class="lead" data-i18n="guidesLead">하이킹, 자전거, 러닝, GPX, 백업, Local AI 기능을 질문별로 확인할 수 있습니다.</p>
+        </div>
+        <div class="guide-grid">
+          <a class="guide-card" href="guides/hiking-route-tracker.html">
+            <strong data-i18n="guideHikingTitle">하이킹 경로 기록</strong>
+            <span data-i18n="guideHikingBody">지도, 고도, GPX, 메모로 등산과 트레일 활동을 복기합니다.</span>
+          </a>
+          <a class="guide-card" href="guides/cycling-route-tracker.html">
+            <strong data-i18n="guideCyclingTitle">자전거 경로 기록</strong>
+            <span data-i18n="guideCyclingBody">라이딩 경로, 속도, 고도, 반복 기록 분석을 관리합니다.</span>
+          </a>
+          <a class="guide-card" href="guides/running-route-tracker.html">
+            <strong data-i18n="guideRunningTitle">러닝 경로 기록</strong>
+            <span data-i18n="guideRunningBody">페이스, 거리, 리캡 카드로 완료한 러닝을 정리합니다.</span>
+          </a>
+          <a class="guide-card" href="guides/gpx-route-tracker.html">
+            <strong data-i18n="guideGpxTitle">GPX 가져오기와 내보내기</strong>
+            <span data-i18n="guideGpxBody">GPX 경로를 지도에서 확인하고 완료 기록을 GPX로 내보냅니다.</span>
+          </a>
+          <a class="guide-card" href="guides/google-drive-backup.html">
+            <strong data-i18n="guideBackupTitle">Google Drive 백업</strong>
+            <span data-i18n="guideBackupBody">기기 기반 저장과 사용자 승인 Google Drive 백업 원칙을 확인합니다.</span>
+          </a>
+          <a class="guide-card" href="guides/local-ai-insights.html">
+            <strong data-i18n="guideAiTitle">Local AI 인사이트</strong>
+            <span data-i18n="guideAiBody">Pro 기기 내 AI 분석이 요약하는 활동 데이터와 한계를 확인합니다.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section aria-label="Support links" data-i18n-attr="aria-label:supportAria">
       <div class="wrap">
         <div class="section-heading">
@@ -849,6 +919,21 @@
         faq3Answer: "활동 데이터는 사용자가 백업을 선택하기 전까지 기기에 저장됩니다. 백업을 켜면 사용자가 승인한 Google Drive 범위 안에서 스냅샷을 저장하고 복원합니다.",
         faq4Question: "Plus와 Pro는 어떻게 다른가요?",
         faq4Answer: "Plus는 광고 제거, 파일 첨부, Google Drive 백업과 복원처럼 기록 보관과 보호에 집중합니다. Pro는 Plus 혜택을 포함하고 경로 계획, 고급 지도, 분석, Local AI 인사이트를 추가합니다.",
+        guidesAria: "RouteTracker 상황별 공식 가이드",
+        guidesHeading: "상황별 RouteTracker 공식 가이드",
+        guidesLead: "하이킹, 자전거, 러닝, GPX, 백업, Local AI 기능을 질문별로 확인할 수 있습니다.",
+        guideHikingTitle: "하이킹 경로 기록",
+        guideHikingBody: "지도, 고도, GPX, 메모로 등산과 트레일 활동을 복기합니다.",
+        guideCyclingTitle: "자전거 경로 기록",
+        guideCyclingBody: "라이딩 경로, 속도, 고도, 반복 기록 분석을 관리합니다.",
+        guideRunningTitle: "러닝 경로 기록",
+        guideRunningBody: "페이스, 거리, 리캡 카드로 완료한 러닝을 정리합니다.",
+        guideGpxTitle: "GPX 가져오기와 내보내기",
+        guideGpxBody: "GPX 경로를 지도에서 확인하고 완료 기록을 GPX로 내보냅니다.",
+        guideBackupTitle: "Google Drive 백업",
+        guideBackupBody: "기기 기반 저장과 사용자 승인 Google Drive 백업 원칙을 확인합니다.",
+        guideAiTitle: "Local AI 인사이트",
+        guideAiBody: "Pro 기기 내 AI 분석이 요약하는 활동 데이터와 한계를 확인합니다.",
         supportAria: "지원 링크",
         supportHeading: "지원과 정책 문서",
         supportLead: "앱 사용 전 데이터 처리 방식과 이용 조건을 확인할 수 있습니다.",
@@ -910,6 +995,21 @@
         faq3Answer: "Activity data stays on the device unless the user chooses backup. When backup is enabled, RouteTracker stores and restores snapshots within the user-approved Google Drive scope.",
         faq4Question: "How are Plus and Pro different?",
         faq4Answer: "Plus focuses on keeping and protecting activity history with ad removal, file attachments, and Google Drive backup and restore. Pro includes Plus and adds route planning, advanced maps, deeper analysis, and Local AI insights.",
+        guidesAria: "RouteTracker use case guides",
+        guidesHeading: "Official RouteTracker guides by use case",
+        guidesLead: "Check focused answers for hiking, cycling, running, GPX, backup, and Local AI features.",
+        guideHikingTitle: "Hiking route tracking",
+        guideHikingBody: "Review trail activities with maps, elevation, GPX, and notes.",
+        guideCyclingTitle: "Cycling route tracking",
+        guideCyclingBody: "Manage ride routes, speed, elevation, and repeated-record analysis.",
+        guideRunningTitle: "Running route tracking",
+        guideRunningBody: "Organize completed runs with pace, distance, and recap cards.",
+        guideGpxTitle: "GPX import and export",
+        guideGpxBody: "View GPX routes on the map and export completed records as GPX.",
+        guideBackupTitle: "Google Drive backup",
+        guideBackupBody: "Review device-based storage and user-approved Google Drive backup.",
+        guideAiTitle: "Local AI insights",
+        guideAiBody: "Check what Pro on-device AI summarizes and where its limits are.",
         supportAria: "Support links",
         supportHeading: "Support and policy documents",
         supportLead: "Review how data is handled and the terms that apply before using the app.",

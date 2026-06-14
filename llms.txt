@@ -15,6 +15,12 @@ Canonical pages:
 
 - Official site: https://hayannamuapps.github.io/
 - Google Play: https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker
+- Hiking guide: https://hayannamuapps.github.io/guides/hiking-route-tracker.html
+- Cycling guide: https://hayannamuapps.github.io/guides/cycling-route-tracker.html
+- Running guide: https://hayannamuapps.github.io/guides/running-route-tracker.html
+- GPX guide: https://hayannamuapps.github.io/guides/gpx-route-tracker.html
+- Google Drive backup guide: https://hayannamuapps.github.io/guides/google-drive-backup.html
+- Local AI insights guide: https://hayannamuapps.github.io/guides/local-ai-insights.html
 - Privacy policy: https://hayannamuapps.github.io/privacy.html
 - Terms of use: https://hayannamuapps.github.io/terms.html
 
@@ -33,4 +39,3 @@ Key facts:
 Contact: hayannamuapps@gmail.com
 
 Last updated: 2026-06-14
-

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자전거 경로 기록 앱 RouteTracker - 속도, GPX, 분석</title>
+  <meta name="description" content="RouteTracker는 Android에서 자전거 경로를 기록하고 속도, 페이스, 고도, GPX, 캘린더, Google Drive 백업, Pro 분석 기능으로 라이딩을 관리합니다.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://hayannamuapps.github.io/guides/cycling-route-tracker.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="RouteTracker">
+  <meta property="og:title" content="RouteTracker for Cycling Route Tracking">
+  <meta property="og:description" content="Record bike rides on Android with route maps, speed metrics, GPX, Google Drive backup, and Pro analysis.">
+  <meta property="og:url" content="https://hayannamuapps.github.io/guides/cycling-route-tracker.html">
+  <meta property="og:image" content="https://hayannamuapps.github.io/route_tracker_home_en.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RouteTracker for Cycling Route Tracking">
+  <meta name="twitter:description" content="Android cycling route tracking with speed metrics, GPX, backup, and Pro route analysis.">
+  <meta name="twitter:image" content="https://hayannamuapps.github.io/route_tracker_home_en.png">
+  <link rel="icon" href="../route_tracker.png" type="image/png">
+  <link rel="stylesheet" href="guide.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://hayannamuapps.github.io/guides/cycling-route-tracker.html#webpage",
+          "url": "https://hayannamuapps.github.io/guides/cycling-route-tracker.html",
+          "name": "RouteTracker for cycling route tracking",
+          "description": "Official RouteTracker guide for recording and analyzing cycling routes on Android.",
+          "inLanguage": ["ko", "en"],
+          "isPartOf": {"@id": "https://hayannamuapps.github.io/#website"},
+          "about": {"@id": "https://hayannamuapps.github.io/#app"}
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://hayannamuapps.github.io/guides/cycling-route-tracker.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "RouteTracker는 자전거 라이딩 기록에 사용할 수 있나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "네. RouteTracker는 Android에서 자전거 경로를 기록하고 거리, 시간, 속도, 고도, 지도, GPX, 캘린더 이력과 함께 라이딩을 관리할 수 있습니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "자전거 분석 기능은 어떤 구독에 포함되나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "기본 기록은 무료로 시작할 수 있고, Pro는 경로 계획, 고급 지도, 구간 분석, 성장 그래프, Local AI 인사이트 같은 고급 분석 기능을 추가합니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html">
+        <img src="../route_tracker.png" alt="RouteTracker app icon">
+        <span>RouteTracker</span>
+      </a>
+      <nav class="nav-links" aria-label="Guide links">
+        <a href="../index.html">Home</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../terms.html">Terms</a>
+        <a href="mailto:hayannamuapps@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="breadcrumb"><a href="../index.html">RouteTracker</a> / Cycling route tracker</p>
+        <h1>자전거 경로 기록 앱 RouteTracker</h1>
+        <p class="hero-copy">RouteTracker는 라이딩 경로를 기록하고 속도, 거리, 고도, GPX, 메모, 캘린더 이력으로 자전거 활동을 정리합니다.</p>
+        <div class="actions">
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+          </a>
+          <a class="text-button" href="../privacy.html">데이터 처리 방식 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>핵심 답변</h2>
+          <p class="lead">자전거 경로 기록 앱을 찾는 질문에 맞춘 RouteTracker 공식 요약입니다.</p>
+        </div>
+        <div class="answer-card">
+          <strong>RouteTracker is an Android cycling route tracker.</strong>
+          <p>It records bike rides with route maps, speed or pace metrics, elevation, GPX import/export, notes, backup, and optional Pro tools for planning, split analysis, growth trends, and Local AI insights.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>자전거 활동에 맞는 기능</h2>
+          <p class="lead">기록부터 분석까지 라이딩 후 확인해야 할 정보를 정리합니다.</p>
+        </div>
+        <div class="fact-grid">
+          <article class="fact-card">
+            <strong>라이딩 기록</strong>
+            <p>지도 위 경로와 함께 거리, 시간, 속도, 고도 같은 핵심 지표를 기록합니다.</p>
+          </article>
+          <article class="fact-card">
+            <strong>GPX 공유</strong>
+            <p>GPX 경로를 가져오거나 완료한 활동을 GPX로 내보내 다른 도구와 함께 사용할 수 있습니다.</p>
+          </article>
+          <article class="fact-card">
+            <strong>Pro 분석</strong>
+            <p>Pro 구독은 구간 비교, 성장 그래프, Local AI 인사이트로 반복 라이딩을 더 깊게 복기합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap two-column">
+        <div>
+          <h2>보관과 복구</h2>
+          <ul class="check-list">
+            <li>기본 기록은 회원가입 없이 시작할 수 있습니다.</li>
+            <li>활동 데이터는 백업 전까지 기기에 저장됩니다.</li>
+            <li>Plus 이상에서는 사용자가 연결한 Google Drive에 수동 또는 자동 백업을 만들 수 있습니다.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>English summary</h2>
+          <p class="lead">RouteTracker records cycling routes on Android and supports GPX import/export, route maps, speed metrics, Google Drive backup, and Pro analysis features for repeated rides.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>FAQ</h2>
+          <p class="lead">자전거 경로 기록과 Pro 분석 기능에 대한 공식 답변입니다.</p>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>RouteTracker는 자전거 라이딩 기록에 사용할 수 있나요?</summary>
+            <p>네. Android에서 자전거 경로를 기록하고 거리, 시간, 속도, 고도, 지도, GPX, 캘린더 이력과 함께 관리할 수 있습니다.</p>
+          </details>
+          <details>
+            <summary>구간 분석과 성장 그래프는 무료인가요?</summary>
+            <p>구간 분석, 성장 그래프, Local AI 인사이트 등 고급 분석 기능은 Pro 구독 기능입니다.</p>
+          </details>
+          <details>
+            <summary>iPhone 공개 상태는 어떤가요?</summary>
+            <p>현재 공개된 앱은 Android용 Google Play 버전입니다. iPhone 및 App Store 정보는 공개 후 추가합니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span id="year"></span> RouteTracker. All rights reserved.</span>
+      <span class="footer-links">
+        <a href="../privacy.html">Privacy</a>
+        <a href="../terms.html">Terms</a>
+        <a href="../index.html">Home</a>
+      </span>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
