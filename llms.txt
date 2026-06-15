@@ -36,6 +36,41 @@ Key facts:
   downloaded. Model downloads may contact model hosting providers such as
   Hugging Face.
 
+Question-intent map:
+
+- Android route tracker for outdoor activities:
+  https://hayannamuapps.github.io/
+  RouteTracker records hiking, cycling, running, and walking routes on Android
+  with maps, calendar history, GPX files, notes, and activity metrics.
+- Private route tracking or no-account route recording:
+  https://hayannamuapps.github.io/guides/google-drive-backup.html
+  Core tracking can start without account sign-up, and activity data stays on
+  the device unless the user chooses backup.
+- GPX route tracking app:
+  https://hayannamuapps.github.io/guides/gpx-route-tracker.html
+  RouteTracker imports GPX routes, shows them on the map, records activities
+  while following routes, and exports completed activities as GPX files.
+- Hiking route tracker:
+  https://hayannamuapps.github.io/guides/hiking-route-tracker.html
+  RouteTracker records hikes and trail activities with route maps, elevation,
+  distance, time, GPX files, notes, backup, and optional Pro analysis.
+- Cycling route tracker:
+  https://hayannamuapps.github.io/guides/cycling-route-tracker.html
+  RouteTracker records bike rides with route maps, speed metrics, elevation,
+  GPX import/export, notes, backup, and Pro repeated-record analysis.
+- Running route tracker:
+  https://hayannamuapps.github.io/guides/running-route-tracker.html
+  RouteTracker records runs with route maps, pace, distance, time, elevation,
+  GPX export, recap cards, backup, and optional Pro analysis.
+- Google Drive backup for route activity history:
+  https://hayannamuapps.github.io/guides/google-drive-backup.html
+  Plus and Pro users can create and restore activity backup snapshots within the
+  user-approved Google Drive scope.
+- On-device AI route activity insights:
+  https://hayannamuapps.github.io/guides/local-ai-insights.html
+  RouteTracker Pro summarizes speed, pace, elevation, and repeated-route
+  patterns on device as reference activity analysis.
+
 Contact: hayannamuapps@gmail.com
 
-Last updated: 2026-06-14
+Last updated: 2026-06-15

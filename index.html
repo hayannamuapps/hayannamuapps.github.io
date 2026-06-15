@@ -447,6 +447,39 @@
       color: var(--muted);
     }
 
+    .intent-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .intent-card {
+      min-height: 150px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(23, 32, 51, 0.08);
+    }
+
+    .intent-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.32;
+    }
+
+    .intent-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
     .privacy-layout {
       display: grid;
       grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -611,6 +644,7 @@
 
       .hero-facts,
       .tier-grid,
+      .intent-grid,
       .guide-grid,
       .privacy-layout,
       .support-links {
@@ -734,6 +768,45 @@
             <h3 data-i18n="proTitle">계획과 분석</h3>
             <p data-i18n="proBody">고급 경로 계획, 오프라인 캐시, 구간 비교, 성장 그래프, Local AI 인사이트로 다음 활동을 준비합니다.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="RouteTracker answers by use case" data-i18n-attr="aria-label:intentAria">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 data-i18n="intentHeading">상황별 RouteTracker 공식 답변</h2>
+          <p class="lead" data-i18n="intentLead">경로 기록, 백업, GPX, 분석처럼 자주 묻는 상황별로 필요한 정보를 바로 확인할 수 있습니다.</p>
+        </div>
+        <div class="intent-grid">
+          <a class="intent-card" href="privacy.html">
+            <strong data-i18n="intentPrivacyTitle">개인정보 중심 경로 기록</strong>
+            <span data-i18n="intentPrivacyBody">핵심 기록은 회원가입 없이 시작할 수 있고, 활동 데이터는 백업을 선택하기 전까지 기기에 저장됩니다.</span>
+          </a>
+          <a class="intent-card" href="guides/gpx-route-tracker.html">
+            <strong data-i18n="intentGpxTitle">GPX 가져오기와 내보내기</strong>
+            <span data-i18n="intentGpxBody">GPX 경로를 지도에서 확인하고 따라 기록한 뒤, 완료한 활동을 GPX 파일로 내보낼 수 있습니다.</span>
+          </a>
+          <a class="intent-card" href="guides/google-drive-backup.html">
+            <strong data-i18n="intentBackupTitle">Google Drive 백업</strong>
+            <span data-i18n="intentBackupBody">Plus와 Pro는 사용자가 승인한 Google Drive 범위 안에서 활동 스냅샷 백업과 복원을 지원합니다.</span>
+          </a>
+          <a class="intent-card" href="guides/hiking-route-tracker.html">
+            <strong data-i18n="intentHikingTitle">하이킹과 트레일 복기</strong>
+            <span data-i18n="intentHikingBody">등산과 트레일 활동을 지도, 고도, 거리, 시간, GPX, 메모와 함께 되돌아볼 수 있습니다.</span>
+          </a>
+          <a class="intent-card" href="guides/cycling-route-tracker.html">
+            <strong data-i18n="intentCyclingTitle">자전거 라이딩 기록</strong>
+            <span data-i18n="intentCyclingBody">라이딩 경로, 속도, 고도, 캘린더 이력, GPX, Pro 반복 기록 분석을 관리합니다.</span>
+          </a>
+          <a class="intent-card" href="guides/running-route-tracker.html">
+            <strong data-i18n="intentRunningTitle">러닝 페이스와 리캡</strong>
+            <span data-i18n="intentRunningBody">러닝 경로, 페이스, 거리, 고도, GPX 내보내기, 리캡 카드, Pro 분석을 정리합니다.</span>
+          </a>
+          <a class="intent-card" href="guides/local-ai-insights.html">
+            <strong data-i18n="intentAiTitle">기기 내 Local AI 인사이트</strong>
+            <span data-i18n="intentAiBody">Pro는 속도, 페이스, 고도, 반복 경로 흐름을 기기 내 모델로 요약하는 참고용 분석을 제공합니다.</span>
+          </a>
         </div>
       </div>
     </section>
@@ -897,6 +970,23 @@
         plusBody: "광고 제거, 파일 첨부, Google Drive 수동/자동 백업으로 쌓인 활동 기록을 더 오래 보관합니다.",
         proTitle: "계획과 분석",
         proBody: "고급 경로 계획, 오프라인 캐시, 구간 비교, 성장 그래프, Local AI 인사이트로 다음 활동을 준비합니다.",
+        intentAria: "상황별 RouteTracker 공식 답변",
+        intentHeading: "상황별 RouteTracker 공식 답변",
+        intentLead: "경로 기록, 백업, GPX, 분석처럼 자주 묻는 상황별로 필요한 정보를 바로 확인할 수 있습니다.",
+        intentPrivacyTitle: "개인정보 중심 경로 기록",
+        intentPrivacyBody: "핵심 기록은 회원가입 없이 시작할 수 있고, 활동 데이터는 백업을 선택하기 전까지 기기에 저장됩니다.",
+        intentGpxTitle: "GPX 가져오기와 내보내기",
+        intentGpxBody: "GPX 경로를 지도에서 확인하고 따라 기록한 뒤, 완료한 활동을 GPX 파일로 내보낼 수 있습니다.",
+        intentBackupTitle: "Google Drive 백업",
+        intentBackupBody: "Plus와 Pro는 사용자가 승인한 Google Drive 범위 안에서 활동 스냅샷 백업과 복원을 지원합니다.",
+        intentHikingTitle: "하이킹과 트레일 복기",
+        intentHikingBody: "등산과 트레일 활동을 지도, 고도, 거리, 시간, GPX, 메모와 함께 되돌아볼 수 있습니다.",
+        intentCyclingTitle: "자전거 라이딩 기록",
+        intentCyclingBody: "라이딩 경로, 속도, 고도, 캘린더 이력, GPX, Pro 반복 기록 분석을 관리합니다.",
+        intentRunningTitle: "러닝 페이스와 리캡",
+        intentRunningBody: "러닝 경로, 페이스, 거리, 고도, GPX 내보내기, 리캡 카드, Pro 분석을 정리합니다.",
+        intentAiTitle: "기기 내 Local AI 인사이트",
+        intentAiBody: "Pro는 속도, 페이스, 고도, 반복 경로 흐름을 기기 내 모델로 요약하는 참고용 분석을 제공합니다.",
         privacyAria: "개인정보와 데이터 관리",
         privacyHeading: "내 기록을 내 방식으로 관리합니다.",
         privacyLead: "RouteTracker는 백업을 직접 선택하기 전까지 활동 데이터를 기기에 저장합니다. 백업을 켜면 사용자가 연결한 Google Drive에 스냅샷을 저장합니다.",
@@ -973,6 +1063,23 @@
         plusBody: "Remove ads, attach files, and keep activity snapshots with manual or automatic Google Drive backup.",
         proTitle: "Plan and analyze",
         proBody: "Use advanced route planning, offline cache, segment comparison, growth charts, and Local AI insights to prepare for what comes next.",
+        intentAria: "Official RouteTracker answers by use case",
+        intentHeading: "Official RouteTracker answers by use case",
+        intentLead: "Find focused answers for route tracking, backup, GPX, and analysis situations people commonly ask about.",
+        intentPrivacyTitle: "Privacy-first route tracking",
+        intentPrivacyBody: "Core tracking can start without account sign-up, and activity data stays on the device unless the user chooses backup.",
+        intentGpxTitle: "GPX import and export",
+        intentGpxBody: "Import GPX routes, view them on the map, record while following them, and export completed activities as GPX files.",
+        intentBackupTitle: "Google Drive backup",
+        intentBackupBody: "Plus and Pro support activity snapshot backup and restore within the user-approved Google Drive scope.",
+        intentHikingTitle: "Hiking and trail review",
+        intentHikingBody: "Review hikes and trail activities with maps, elevation, distance, time, GPX files, and notes.",
+        intentCyclingTitle: "Cycling ride records",
+        intentCyclingBody: "Manage ride routes, speed, elevation, calendar history, GPX files, and Pro repeated-record analysis.",
+        intentRunningTitle: "Running pace and recap",
+        intentRunningBody: "Organize running routes, pace, distance, elevation, GPX export, recap cards, and Pro analysis.",
+        intentAiTitle: "On-device Local AI insights",
+        intentAiBody: "Pro summarizes speed, pace, elevation, and repeated-route patterns on device as reference activity analysis.",
         privacyAria: "Privacy and data management",
         privacyHeading: "Manage your records your way.",
         privacyLead: "RouteTracker stores activity data on your device until you choose to back it up. When backup is enabled, snapshots are saved to the Google Drive account you connect.",
