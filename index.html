@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RouteTracker - Android 하이킹, 자전거, 러닝 경로 기록</title>
-  <meta name="description" content="RouteTracker는 Android에서 하이킹, 자전거, 러닝 경로를 기록하고 Google Drive 백업과 Local AI 인사이트로 활동을 되돌아보는 모바일 앱입니다. iPhone 출시 정보는 App Store 공개 후 안내합니다.">
+  <title>RouteTracker - iPhone 및 Android 경로 기록</title>
+  <meta name="description" content="RouteTracker는 iPhone과 Android에서 하이킹, 자전거, 러닝 경로를 기록하고 Google Drive 백업과 Local AI 인사이트로 활동을 되돌아보는 모바일 앱입니다.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#0f766e">
   <link rel="canonical" href="https://hayannamuapps.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="RouteTracker">
-  <meta property="og:title" content="RouteTracker - Android Hiking, Cycling, and Running Route Tracker">
-  <meta property="og:description" content="Record routes, review activities, manage Google Drive backups, and use Plus/Pro planning, analysis, and Local AI features. Android is available on Google Play.">
+  <meta property="og:title" content="RouteTracker - iPhone and Android Route Tracker">
+  <meta property="og:description" content="Record routes, review activities, manage Google Drive backups, and use Plus/Pro planning, analysis, and Local AI features. Available on the App Store and Google Play.">
   <meta property="og:url" content="https://hayannamuapps.github.io/">
   <meta property="og:image" content="https://hayannamuapps.github.io/route_tracker_home_en.png">
   <meta property="og:image:width" content="1080">
@@ -19,7 +19,7 @@
   <meta property="og:locale" content="ko_KR">
   <meta property="og:locale:alternate" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="RouteTracker - Android Route Tracker">
+  <meta name="twitter:title" content="RouteTracker - iPhone and Android Route Tracker">
   <meta name="twitter:description" content="Record hiking, cycling, and running routes with Google Drive backup, Plus/Pro planning, analysis, and on-device Local AI insights.">
   <meta name="twitter:image" content="https://hayannamuapps.github.io/route_tracker_home_en.png">
   <link rel="icon" href="route_tracker.png" type="image/png">
@@ -45,7 +45,7 @@
           "@id": "https://hayannamuapps.github.io/#website",
           "name": "RouteTracker",
           "url": "https://hayannamuapps.github.io/",
-          "description": "RouteTracker is the official support and marketing site for the Android route tracking app. iPhone release information will be added after the App Store launch is public.",
+          "description": "RouteTracker is the official support and marketing site for the iPhone and Android route tracking app.",
           "inLanguage": ["ko", "en"],
           "publisher": {
             "@id": "https://hayannamuapps.github.io/#organization"
@@ -62,9 +62,19 @@
           "url": "https://hayannamuapps.github.io/",
           "description": "RouteTracker records hiking, cycling, running, and walking routes, keeps activity records on device by default, and supports Google Drive backup, route planning, analysis, and on-device Local AI insights through Plus and Pro features.",
           "applicationCategory": "HealthApplication",
-          "operatingSystem": "Android",
-          "downloadUrl": "https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker",
-          "installUrl": "https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker",
+          "operatingSystem": ["iOS", "Android"],
+          "downloadUrl": [
+            "https://apps.apple.com/us/app/routetracker-hike-bike-run/id6776908209",
+            "https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker"
+          ],
+          "installUrl": [
+            "https://apps.apple.com/us/app/routetracker-hike-bike-run/id6776908209",
+            "https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker"
+          ],
+          "sameAs": [
+            "https://apps.apple.com/us/app/routetracker-hike-bike-run/id6776908209",
+            "https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker"
+          ],
           "isAccessibleForFree": true,
           "offers": {
             "@type": "Offer",
@@ -107,7 +117,7 @@
               "name": "현재 어떤 스토어에서 받을 수 있나요?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "현재 Android 앱은 Google Play에서 받을 수 있습니다. iPhone 및 App Store 출시 정보는 공개 후 이 페이지에 추가합니다."
+                "text": "RouteTracker는 iPhone용 App Store와 Android용 Google Play에서 받을 수 있습니다."
               }
             },
             {
@@ -324,10 +334,11 @@
       margin-top: 34px;
     }
 
+    .store-badge img,
     .play-badge img {
       display: block;
-      width: 186px;
-      height: auto;
+      width: auto;
+      height: 54px;
     }
 
     .text-button {
@@ -730,12 +741,15 @@
             이동 경로를 기록하고, GPX와 메모를 함께 남기고, Google Drive 백업으로 활동 기록을 직접 관리하세요.
           </p>
           <div class="actions">
-            <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
+            <a class="store-badge" href="https://apps.apple.com/kr/app/routetracker-%ED%95%98%EC%9D%B4%ED%82%B9-%EC%9E%90%EC%A0%84%EA%B1%B0-%EB%9F%AC%EB%8B%9D/id6776908209" target="_blank" rel="noopener" data-i18n-attr="href:appStoreUrl">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store에서 다운로드" data-i18n-attr="alt:appAlt">
+            </a>
+            <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
               <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" data-i18n-attr="alt:playAlt">
             </a>
             <a class="text-button" href="privacy.html" data-i18n="dataButton">데이터 처리 방식 보기</a>
           </div>
-          <p class="store-status" data-i18n="storeStatus">현재 Android 앱은 Google Play에서 받을 수 있습니다. iPhone 출시 정보는 App Store 공개 후 이 페이지에 추가합니다.</p>
+          <p class="store-status" data-i18n="storeStatus">RouteTracker는 iPhone용 App Store와 Android용 Google Play에서 받을 수 있습니다.</p>
           <div class="hero-facts" aria-label="Key features" data-i18n-attr="aria-label:factsAria">
             <div class="hero-fact" data-i18n="fact1">회원가입 없이 핵심 기록 시작</div>
             <div class="hero-fact" data-i18n="fact2">기기 기반 기본 저장</div>
@@ -853,7 +867,7 @@
           </details>
           <details>
             <summary data-i18n="faq2Question">현재 어떤 스토어에서 받을 수 있나요?</summary>
-            <p data-i18n="faq2Answer">현재 Android 앱은 Google Play에서 받을 수 있습니다. iPhone 및 App Store 출시 정보는 공개 후 이 페이지에 추가합니다.</p>
+            <p data-i18n="faq2Answer">RouteTracker는 iPhone용 App Store와 Android용 Google Play에서 받을 수 있습니다.</p>
           </details>
           <details>
             <summary data-i18n="faq3Question">활동 데이터는 어디에 저장되나요?</summary>
@@ -923,7 +937,7 @@
           </a>
           <div class="support-link">
             <strong data-i18n="supportStoreTitle">스토어 제공 상태</strong>
-            <span data-i18n="supportStoreSub">Android 제공 상태와 iPhone 출시 후속 정보를 이 페이지에서 안내합니다.</span>
+            <span data-i18n="supportStoreSub">iPhone App Store와 Android Google Play 제공 상태를 이 페이지에서 안내합니다.</span>
           </div>
         </div>
       </div>
@@ -941,8 +955,8 @@
   <script>
     const messages = {
       ko: {
-        pageTitle: "RouteTracker - Android 하이킹, 자전거, 러닝 경로 기록",
-        metaDescription: "RouteTracker는 Android에서 하이킹, 자전거, 러닝 경로를 기록하고 Google Drive 백업과 Local AI 인사이트로 활동을 되돌아보는 모바일 앱입니다. iPhone 출시 정보는 App Store 공개 후 안내합니다.",
+        pageTitle: "RouteTracker - iPhone 및 Android 경로 기록",
+        metaDescription: "RouteTracker는 iPhone과 Android에서 하이킹, 자전거, 러닝 경로를 기록하고 Google Drive 백업과 Local AI 인사이트로 활동을 되돌아보는 모바일 앱입니다.",
         brandIconAlt: "RouteTracker 앱 아이콘",
         navAria: "주요 링크",
         navPrivacy: "개인정보처리방침",
@@ -952,9 +966,11 @@
         heroAria: "RouteTracker 소개",
         eyebrow: "하이킹, 자전거, 러닝 경로 기록",
         heroCopy: "이동 경로를 기록하고, GPX와 메모를 함께 남기고, Google Drive 백업으로 활동 기록을 직접 관리하세요.",
+        appStoreUrl: "https://apps.apple.com/kr/app/routetracker-%ED%95%98%EC%9D%B4%ED%82%B9-%EC%9E%90%EC%A0%84%EA%B1%B0-%EB%9F%AC%EB%8B%9D/id6776908209",
+        appAlt: "App Store에서 다운로드",
         playAlt: "Google Play에서 받기",
         dataButton: "데이터 처리 방식 보기",
-        storeStatus: "현재 Android 앱은 Google Play에서 받을 수 있습니다. iPhone 출시 정보는 App Store 공개 후 이 페이지에 추가합니다.",
+        storeStatus: "RouteTracker는 iPhone용 App Store와 Android용 Google Play에서 받을 수 있습니다.",
         factsAria: "핵심 특징",
         fact1: "회원가입 없이 핵심 기록 시작",
         fact2: "기기 기반 기본 저장",
@@ -1004,7 +1020,7 @@
         faq1Question: "RouteTracker는 어떤 앱인가요?",
         faq1Answer: "RouteTracker는 하이킹, 자전거, 러닝, 걷기 경로를 기록하고 완료한 활동을 지도, 캘린더, 기본 지표, GPX, 메모와 함께 관리하는 모바일 앱입니다.",
         faq2Question: "현재 어떤 스토어에서 받을 수 있나요?",
-        faq2Answer: "현재 Android 앱은 Google Play에서 받을 수 있습니다. iPhone 및 App Store 출시 정보는 공개 후 이 페이지에 추가합니다.",
+        faq2Answer: "RouteTracker는 iPhone용 App Store와 Android용 Google Play에서 받을 수 있습니다.",
         faq3Question: "활동 데이터는 어디에 저장되나요?",
         faq3Answer: "활동 데이터는 사용자가 백업을 선택하기 전까지 기기에 저장됩니다. 백업을 켜면 사용자가 승인한 Google Drive 범위 안에서 스냅샷을 저장하고 복원합니다.",
         faq4Question: "Plus와 Pro는 어떻게 다른가요?",
@@ -1030,12 +1046,12 @@
         supportPrivacySub: "개인정보처리방침",
         supportTermsSub: "이용약관",
         supportStoreTitle: "스토어 제공 상태",
-        supportStoreSub: "Android 제공 상태와 iPhone 출시 후속 정보를 이 페이지에서 안내합니다.",
+        supportStoreSub: "iPhone App Store와 Android Google Play 제공 상태를 이 페이지에서 안내합니다.",
         footerCopyright: "©"
       },
       en: {
-        pageTitle: "RouteTracker - Android Hiking, Cycling, and Running Route Tracker",
-        metaDescription: "RouteTracker is an Android app for recording hiking, cycling, and running routes, managing Google Drive backups, and reviewing activities with Local AI insights. iPhone release information will be added after App Store launch.",
+        pageTitle: "RouteTracker - iPhone and Android Route Tracker",
+        metaDescription: "RouteTracker is an iPhone and Android app for recording hiking, cycling, and running routes, managing Google Drive backups, and reviewing activities with Local AI insights.",
         brandIconAlt: "RouteTracker app icon",
         navAria: "Main links",
         navPrivacy: "Privacy",
@@ -1045,9 +1061,11 @@
         heroAria: "RouteTracker introduction",
         eyebrow: "Hiking, cycling, and running route tracking",
         heroCopy: "Record your route, keep GPX files and notes with each activity, and manage your activity history with Google Drive backup.",
+        appStoreUrl: "https://apps.apple.com/us/app/routetracker-hike-bike-run/id6776908209",
+        appAlt: "Download on the App Store",
         playAlt: "Get it on Google Play",
         dataButton: "See how data is handled",
-        storeStatus: "The Android app is available on Google Play. iPhone release information will be added here after the App Store launch is public.",
+        storeStatus: "RouteTracker is available for iPhone on the App Store and for Android on Google Play.",
         factsAria: "Key features",
         fact1: "Start core tracking without an account",
         fact2: "Device-based storage by default",
@@ -1097,7 +1115,7 @@
         faq1Question: "What is RouteTracker?",
         faq1Answer: "RouteTracker is a mobile app for recording hiking, cycling, running, and walking routes, then reviewing completed activities with maps, calendar history, core stats, GPX files, and notes.",
         faq2Question: "Where is RouteTracker currently available?",
-        faq2Answer: "The Android app is currently available on Google Play. iPhone and App Store release information will be added to this page after public launch.",
+        faq2Answer: "RouteTracker is available for iPhone on the App Store and for Android on Google Play.",
         faq3Question: "Where is activity data stored?",
         faq3Answer: "Activity data stays on the device unless the user chooses backup. When backup is enabled, RouteTracker stores and restores snapshots within the user-approved Google Drive scope.",
         faq4Question: "How are Plus and Pro different?",
@@ -1123,7 +1141,7 @@
         supportPrivacySub: "Privacy details",
         supportTermsSub: "Usage terms",
         supportStoreTitle: "Store availability",
-        supportStoreSub: "Android availability and later iPhone release updates are handled from this page.",
+        supportStoreSub: "iPhone App Store and Android Google Play availability are handled from this page.",
         footerCopyright: "©"
       }
     };

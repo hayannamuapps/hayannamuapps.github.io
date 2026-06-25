@@ -8,12 +8,12 @@ features for attachments, planning, analysis, and on-device Local AI insights.
 Current public availability:
 
 - Android: available on Google Play.
-- iPhone/App Store: release information will be added after the App Store launch
-  is public.
+- iPhone: available on the App Store.
 
 Canonical pages:
 
 - Official site: https://hayannamuapps.github.io/
+- App Store: https://apps.apple.com/us/app/routetracker-hike-bike-run/id6776908209
 - Google Play: https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker
 - Hiking guide: https://hayannamuapps.github.io/guides/hiking-route-tracker.html
 - Cycling guide: https://hayannamuapps.github.io/guides/cycling-route-tracker.html
@@ -38,10 +38,11 @@ Key facts:
 
 Question-intent map:
 
-- Android route tracker for outdoor activities:
+- iPhone and Android route tracker for outdoor activities:
   https://hayannamuapps.github.io/
-  RouteTracker records hiking, cycling, running, and walking routes on Android
-  with maps, calendar history, GPX files, notes, and activity metrics.
+  RouteTracker records hiking, cycling, running, and walking routes on iPhone
+  and Android with maps, calendar history, GPX files, notes, and activity
+  metrics.
 - Private route tracking or no-account route recording:
   https://hayannamuapps.github.io/guides/google-drive-backup.html
   Core tracking can start without account sign-up, and activity data stays on
@@ -73,4 +74,4 @@ Question-intent map:
 
 Contact: hayannamuapps@gmail.com
 
-Last updated: 2026-06-15
+Last updated: 2026-06-25
