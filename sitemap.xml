@@ -26,21 +26,27 @@
   </url>
   <url>
     <loc>https://hayannamuapps.github.io/guides/gpx-route-tracker.html</loc>
-    <lastmod>2026-06-29</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hayannamuapps.github.io/guides/google-drive-backup.html</loc>
-    <lastmod>2026-06-29</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hayannamuapps.github.io/guides/local-ai-insights.html</loc>
-    <lastmod>2026-06-29</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hayannamuapps.github.io/llms.txt</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hayannamuapps.github.io/privacy.html</loc>
