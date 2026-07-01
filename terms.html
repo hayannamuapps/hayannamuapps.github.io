@@ -3,131 +3,259 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RouteTracker</title>
+  <title>RouteTracker 이용약관</title>
+  <meta name="description" content="RouteTracker 이용약관과 Terms of Use 문서를 한국어와 영어로 확인할 수 있습니다.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="canonical" href="https://hayannamuapps.github.io/terms.html">
   <link rel="icon" href="route_tracker.png" type="image/png">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <link rel="stylesheet" href="policy-hub.css">
+  <script>
+    (() => {
+      const supported = ["ko", "en"];
+      const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith("ko") ? "ko" : "en";
+      let language = browserLanguage;
 
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .content {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding-top: 30px;
-    }
-
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-
-    .header img {
-      width: 60px;
-      height: 60px;
-    }
-
-    .header span {
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .subtext {
-      font-size: 20px;
-      color: #666;
-      text-align: center;
-      max-width: 80%;
-      line-height: 1.6;
-      margin-top: 10px;
-    }
-
-    .links ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      text-align: center;
-    }
-
-    .links li {
-      margin-top: 10px;
-      margin-bottom: 5px;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 16px 0;
-      font-size: 13px;
-      color: #555;
-    }
-
-    .footer a {
-      color: #555;
-      text-decoration: none;
-      margin: 0 8px;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      .header span {
-        font-size: 22px;
+      try {
+        const urlLanguage = new URLSearchParams(window.location.search).get("lang");
+        const savedLanguage = localStorage.getItem("routeTrackerLanguage");
+        language = supported.includes(urlLanguage) ? urlLanguage : supported.includes(savedLanguage) ? savedLanguage : browserLanguage;
+      } catch (error) {
+        language = browserLanguage;
       }
 
-      .header img {
-        width: 48px;
-        height: 48px;
-      }
-
-      .subtext {
-        font-size: 16px;
-        max-width: 80%;
-        margin-top: 10px;
-      }
-
-      .footer {
-        font-size: 12px;
-        padding: 12px 10px;
-      }
-    }
-  </style>
+      document.documentElement.lang = language;
+    })();
+  </script>
 </head>
 <body>
-
-  <div class="content">
-    <div class="header">
-      <img src="route_tracker.png" alt="App Icon">
-      <span>RouteTracker</span>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <img src="route_tracker.png" alt="RouteTracker app icon" data-i18n-attr="alt:brandIconAlt">
+        <span>RouteTracker</span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links" aria-label="Main links" data-i18n-attr="aria-label:navAria">
+          <a href="index.html" data-i18n="navHome">홈</a>
+          <a href="privacy.html" data-i18n="navPrivacy">개인정보처리방침</a>
+          <a href="mailto:hayannamuapps@gmail.com" data-i18n="navContact">문의</a>
+        </nav>
+        <div class="language-toggle" aria-label="Language" data-i18n-attr="aria-label:languageAria">
+          <button class="language-button" type="button" data-language-button="ko" lang="ko">KO</button>
+          <button class="language-button" type="button" data-language-button="en" lang="en">EN</button>
+        </div>
+      </div>
     </div>
+  </header>
 
-    <div class="links">
-      <ul>
-        <li><a href="terms_of_use_en.html">Terms of Use (English)</a></li>
-        <li><a href="terms_of_use_ko.html">이용 약관 (한국어)</a></li>
-      </ul>
+  <main>
+    <section class="hero" aria-label="RouteTracker terms documents" data-i18n-attr="aria-label:heroAria">
+      <div class="wrap">
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="eyebrow">서비스 이용 조건</p>
+          <h1 data-i18n="heroTitle">이용약관</h1>
+          <p class="hero-copy" data-i18n="heroCopy">
+            RouteTracker의 위치 기반 기능, 기기 저장, 백업, 구독, 서비스 변경 조건을 확인할 수 있습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Terms language choices" data-i18n-attr="aria-label:documentsAria">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 data-i18n="documentsHeading">문서 언어 선택</h2>
+          <p class="lead" data-i18n="documentsLead">필요한 언어의 이용약관 전문으로 이동합니다.</p>
+        </div>
+        <div class="document-grid">
+          <a class="document-card" href="terms_of_use_ko.html">
+            <span class="card-label">Korean</span>
+            <strong>이용약관</strong>
+            <span data-i18n="koDocumentBody">한국어 이용약관 전문을 확인합니다.</span>
+          </a>
+          <a class="document-card" href="terms_of_use_en.html">
+            <span class="card-label secondary">English</span>
+            <strong>Terms of Use</strong>
+            <span data-i18n="enDocumentBody">Review the full English terms of use.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Terms coverage" data-i18n-attr="aria-label:coverageAria">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 data-i18n="coverageHeading">주요 확인 범위</h2>
+          <p class="lead" data-i18n="coverageLead">약관은 앱 기능 사용 시 사용자에게 영향을 줄 수 있는 조건을 중심으로 정리되어 있습니다.</p>
+        </div>
+        <ul class="point-grid">
+          <li>
+            <strong data-i18n="point1Title">위치 기반 기능</strong>
+            <span data-i18n="point1Body">기기와 환경에 따라 달라질 수 있는 위치 정보 정확도와 활용 범위를 설명합니다.</span>
+          </li>
+          <li>
+            <strong data-i18n="point2Title">기기 저장과 백업</strong>
+            <span data-i18n="point2Body">기기 내 저장, 앱 삭제, 클라우드 백업과 복원 책임 범위를 확인할 수 있습니다.</span>
+          </li>
+          <li>
+            <strong data-i18n="point3Title">구독과 서비스 변경</strong>
+            <span data-i18n="point3Body">Plus/Pro 구독, 갱신, 환불, 서비스 변경 또는 종료 조건을 다룹니다.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-label="Related support links" data-i18n-attr="aria-label:supportAria">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 data-i18n="supportHeading">관련 지원 문서</h2>
+          <p class="lead" data-i18n="supportLead">개인정보처리방침과 앱 소개 페이지로 바로 이동할 수 있습니다.</p>
+        </div>
+        <div class="support-links">
+          <a class="support-link" href="privacy.html">
+            <strong>Privacy Policy</strong>
+            <span data-i18n="supportPrivacy">개인정보처리방침</span>
+          </a>
+          <a class="support-link" href="index.html">
+            <strong>RouteTracker</strong>
+            <span data-i18n="supportHome">홈으로 돌아가기</span>
+          </a>
+          <a class="support-link" href="mailto:hayannamuapps@gmail.com">
+            <strong>Contact</strong>
+            <span>hayannamuapps@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>©</span> <span id="year"></span> RouteTracker. All rights reserved.
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
     </div>
-  </div>
-
-  <div class="footer">
-    © <span id="year"></span> RouteTracker. All rights reserved.
-  </div>
+  </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    const messages = {
+      ko: {
+        pageTitle: "RouteTracker 이용약관",
+        metaDescription: "RouteTracker 이용약관과 Terms of Use 문서를 한국어와 영어로 확인할 수 있습니다.",
+        brandIconAlt: "RouteTracker 앱 아이콘",
+        navAria: "주요 링크",
+        navHome: "홈",
+        navPrivacy: "개인정보처리방침",
+        navContact: "문의",
+        languageAria: "언어 선택",
+        heroAria: "RouteTracker 이용약관 문서",
+        eyebrow: "서비스 이용 조건",
+        heroTitle: "이용약관",
+        heroCopy: "RouteTracker의 위치 기반 기능, 기기 저장, 백업, 구독, 서비스 변경 조건을 확인할 수 있습니다.",
+        documentsAria: "이용약관 언어 선택",
+        documentsHeading: "문서 언어 선택",
+        documentsLead: "필요한 언어의 이용약관 전문으로 이동합니다.",
+        koDocumentBody: "한국어 이용약관 전문을 확인합니다.",
+        enDocumentBody: "영문 Terms of Use 전문을 확인합니다.",
+        coverageAria: "이용약관 주요 범위",
+        coverageHeading: "주요 확인 범위",
+        coverageLead: "약관은 앱 기능 사용 시 사용자에게 영향을 줄 수 있는 조건을 중심으로 정리되어 있습니다.",
+        point1Title: "위치 기반 기능",
+        point1Body: "기기와 환경에 따라 달라질 수 있는 위치 정보 정확도와 활용 범위를 설명합니다.",
+        point2Title: "기기 저장과 백업",
+        point2Body: "기기 내 저장, 앱 삭제, 클라우드 백업과 복원 책임 범위를 확인할 수 있습니다.",
+        point3Title: "구독과 서비스 변경",
+        point3Body: "Plus/Pro 구독, 갱신, 환불, 서비스 변경 또는 종료 조건을 다룹니다.",
+        supportAria: "관련 지원 링크",
+        supportHeading: "관련 지원 문서",
+        supportLead: "개인정보처리방침과 앱 소개 페이지로 바로 이동할 수 있습니다.",
+        supportPrivacy: "개인정보처리방침",
+        supportHome: "홈으로 돌아가기"
+      },
+      en: {
+        pageTitle: "RouteTracker Terms of Use",
+        metaDescription: "Review RouteTracker terms of use documents in English and Korean.",
+        brandIconAlt: "RouteTracker app icon",
+        navAria: "Main links",
+        navHome: "Home",
+        navPrivacy: "Privacy",
+        navContact: "Contact",
+        languageAria: "Language",
+        heroAria: "RouteTracker terms documents",
+        eyebrow: "Service usage conditions",
+        heroTitle: "Terms of Use",
+        heroCopy: "Review RouteTracker conditions for location-based features, device storage, backup, subscriptions, billing, and service changes.",
+        documentsAria: "Terms language choices",
+        documentsHeading: "Choose a document language",
+        documentsLead: "Open the full terms of use in the language you need.",
+        koDocumentBody: "Open the full Korean terms of use.",
+        enDocumentBody: "Review the full English terms of use.",
+        coverageAria: "Terms coverage",
+        coverageHeading: "What the terms cover",
+        coverageLead: "The terms focus on conditions that can affect real app usage.",
+        point1Title: "Location-based features",
+        point1Body: "Understand how location accuracy and location-based information can vary by device and environment.",
+        point2Title: "Device storage and backup",
+        point2Body: "Review the boundaries for local storage, app deletion, cloud backup, and restore responsibility.",
+        point3Title: "Subscriptions and service changes",
+        point3Body: "Check Plus/Pro subscriptions, renewals, refunds, and service change or termination conditions.",
+        supportAria: "Related support links",
+        supportHeading: "Related support documents",
+        supportLead: "Go directly to the privacy policy or the RouteTracker home page.",
+        supportPrivacy: "Privacy details",
+        supportHome: "Back to home"
+      }
+    };
 
+    const applyLanguage = (language) => {
+      const selected = messages[language] ? language : "en";
+      const dictionary = messages[selected];
+
+      document.documentElement.lang = selected;
+      document.title = dictionary.pageTitle;
+      const description = document.querySelector('meta[name="description"]');
+      if (description) {
+        description.setAttribute("content", dictionary.metaDescription);
+      }
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        if (dictionary[key]) {
+          element.textContent = dictionary[key];
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-attr]").forEach((element) => {
+        element.getAttribute("data-i18n-attr").split(",").forEach((entry) => {
+          const parts = entry.split(":");
+          const attr = parts[0];
+          const key = parts[1];
+          if (attr && key && dictionary[key]) {
+            element.setAttribute(attr, dictionary[key]);
+          }
+        });
+      });
+
+      document.querySelectorAll("[data-language-button]").forEach((button) => {
+        const active = button.getAttribute("data-language-button") === selected;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-pressed", String(active));
+      });
+
+      localStorage.setItem("routeTrackerLanguage", selected);
+    };
+
+    const urlLanguage = new URLSearchParams(window.location.search).get("lang");
+    const savedLanguage = localStorage.getItem("routeTrackerLanguage");
+    const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith("ko") ? "ko" : "en";
+    const initialLanguage = messages[urlLanguage] ? urlLanguage : savedLanguage || browserLanguage;
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll("[data-language-button]").forEach((button) => {
+      button.addEventListener("click", () => applyLanguage(button.getAttribute("data-language-button")));
+    });
+    applyLanguage(initialLanguage);
+  </script>
 </body>
 </html>
