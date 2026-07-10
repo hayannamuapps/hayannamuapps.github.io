@@ -744,7 +744,7 @@
             <a class="store-badge" href="https://apps.apple.com/kr/app/routetracker-%ED%95%98%EC%9D%B4%ED%82%B9-%EC%9E%90%EC%A0%84%EA%B1%B0-%EB%9F%AC%EB%8B%9D/id6776908209" target="_blank" rel="noopener" data-i18n-attr="href:appStoreUrl">
               <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store에서 다운로드" data-i18n-attr="alt:appAlt">
             </a>
-            <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
+            <a class="store-badge" data-store="play" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
               <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" data-i18n-attr="alt:playAlt">
             </a>
             <a class="text-button" href="privacy.html" data-i18n="dataButton">데이터 처리 방식 보기</a>
@@ -960,6 +960,7 @@
     </div>
   </footer>
 
+  <script src="utm.js"></script>
   <script>
     const messages = {
       ko: {
@@ -1206,6 +1207,9 @@
     const initialLanguage = messages[urlLanguage] ? urlLanguage : savedLanguage || browserLanguage;
 
     document.getElementById("year").textContent = new Date().getFullYear();
+    if (window.RouteTrackerUtm) {
+      window.RouteTrackerUtm.applyIncomingUtmToPlayStoreLinks();
+    }
     document.querySelectorAll("[data-language-button]").forEach((button) => {
       button.addEventListener("click", () => applyLanguage(button.getAttribute("data-language-button")));
     });
