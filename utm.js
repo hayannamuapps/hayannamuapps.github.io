@@ -9,6 +9,13 @@
     "utm_content",
   ]);
 
+  const APPLE_CAMPAIGN_LINKS = Object.freeze({
+    reddit: "https://apps.apple.com/app/apple-store/id6776908209?pt=128997276&ct=rt_202607_reddit&mt=8",
+    threads: "https://apps.apple.com/app/apple-store/id6776908209?pt=128997276&ct=rt_202607_threads&mt=8",
+    x: "https://apps.apple.com/app/apple-store/id6776908209?pt=128997276&ct=rt_202607_x&mt=8",
+    instagram: "https://apps.apple.com/app/apple-store/id6776908209?pt=128997276&ct=rt_202607_instagram&mt=8",
+  });
+
   function toSearchParams(search) {
     if (search instanceof URLSearchParams) {
       return search;
@@ -65,10 +72,43 @@
     return links.length;
   }
 
+  function applyIncomingAttributionToStoreLinks(documentObject, search) {
+    const documentRef = documentObject || (root && root.document);
+    if (!documentRef) {
+      return 0;
+    }
+
+    const incomingSearch = search === undefined
+      ? (root && root.location ? root.location.search : "")
+      : search;
+    const incoming = getIncomingUtm(incomingSearch);
+    if (Object.keys(incoming).length === 0) {
+      return 0;
+    }
+
+    const playCount = applyIncomingUtmToPlayStoreLinks(documentRef, incomingSearch);
+    const source = String(incoming.utm_source || "").toLowerCase();
+    const appleUrl = APPLE_CAMPAIGN_LINKS[source];
+    const appStoreLinks = documentRef.querySelectorAll('[data-store="app-store"]');
+    if (!appleUrl) {
+      return playCount;
+    }
+
+    appStoreLinks.forEach((link) => {
+      link.href = appleUrl;
+      if (link.dataset) {
+        link.dataset.appleCampaignTracked = "true";
+      }
+    });
+    return playCount + appStoreLinks.length;
+  }
+
   const api = Object.freeze({
+    APPLE_CAMPAIGN_LINKS,
     TRACKED_UTM_KEYS,
     getIncomingUtm,
     appendIncomingUtm,
+    applyIncomingAttributionToStoreLinks,
     applyIncomingUtmToPlayStoreLinks,
   });
 

@@ -741,7 +741,7 @@
             이동 경로를 기록하고, GPX와 메모를 함께 남기고, Google Drive 백업으로 활동 기록을 직접 관리하세요.
           </p>
           <div class="actions">
-            <a class="store-badge" href="https://apps.apple.com/kr/app/routetracker-%ED%95%98%EC%9D%B4%ED%82%B9-%EC%9E%90%EC%A0%84%EA%B1%B0-%EB%9F%AC%EB%8B%9D/id6776908209" target="_blank" rel="noopener" data-i18n-attr="href:appStoreUrl">
+            <a class="store-badge" data-store="app-store" href="https://apps.apple.com/kr/app/routetracker-%ED%95%98%EC%9D%B4%ED%82%B9-%EC%9E%90%EC%A0%84%EA%B1%B0-%EB%9F%AC%EB%8B%9D/id6776908209" target="_blank" rel="noopener" data-i18n-attr="href:appStoreUrl">
               <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store에서 다운로드" data-i18n-attr="alt:appAlt">
             </a>
             <a class="store-badge" data-store="play" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
@@ -1199,6 +1199,9 @@
       });
 
       localStorage.setItem("routeTrackerLanguage", selected);
+      if (window.RouteTrackerUtm) {
+        window.RouteTrackerUtm.applyIncomingAttributionToStoreLinks();
+      }
     };
 
     const urlLanguage = new URLSearchParams(window.location.search).get("lang");
@@ -1207,9 +1210,6 @@
     const initialLanguage = messages[urlLanguage] ? urlLanguage : savedLanguage || browserLanguage;
 
     document.getElementById("year").textContent = new Date().getFullYear();
-    if (window.RouteTrackerUtm) {
-      window.RouteTrackerUtm.applyIncomingUtmToPlayStoreLinks();
-    }
     document.querySelectorAll("[data-language-button]").forEach((button) => {
       button.addEventListener("click", () => applyLanguage(button.getAttribute("data-language-button")));
     });
