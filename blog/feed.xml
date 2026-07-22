@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>RouteTracker 공식 블로그</title>
+    <link>https://hayannamuapps.github.io/blog/</link>
+    <description>RouteTracker 사용법과 제품 설계 기록</description>
+    <language>ko-KR</language>
+    <item>
+      <title>GPX를 가져와 따라 기록하고 다시 내보내는 전체 흐름</title>
+      <link>https://hayannamuapps.github.io/blog/gpx-import-follow-export-workflow.html</link>
+      <guid isPermaLink="true">https://hayannamuapps.github.io/blog/gpx-import-follow-export-workflow.html</guid>
+      <description>외부 GPX 경로를 RouteTracker 지도에서 확인하고 실제 활동을 기록한 뒤, 완료한 활동을 새 GPX 파일로 내보내는 왕복 워크플로와 주의점을 설명합니다.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>첫 하이킹·라이딩·러닝 경로 기록 전 확인할 7가지</title>
+      <link>https://hayannamuapps.github.io/blog/first-hike-ride-run-recording-checklist.html</link>
+      <guid isPermaLink="true">https://hayannamuapps.github.io/blog/first-hike-ride-run-recording-checklist.html</guid>
+      <description>RouteTracker로 첫 활동을 기록하기 전에 위치 권한, GPS 환경, 짧은 시험 기록, 활동 완료와 리캡 확인까지 점검하는 단계별 체크리스트입니다.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>기기 우선 활동 기록과 Google Drive 백업을 분리한 이유</title>
+      <link>https://hayannamuapps.github.io/blog/device-first-google-drive-backup-boundary.html</link>
+      <guid isPermaLink="true">https://hayannamuapps.github.io/blog/device-first-google-drive-backup-boundary.html</guid>
+      <description>RouteTracker가 기본 활동 기록은 기기에 두고, Plus·Pro 사용자가 선택할 때만 승인된 Google Drive 범위로 스냅샷을 백업하는 구조와 복원 한계를 설명합니다.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>

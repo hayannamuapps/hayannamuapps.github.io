@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>RouteTracker official blog</title>
+    <link>https://hayannamuapps.github.io/en/blog/</link>
+    <description>RouteTracker how-to and product engineering notes</description>
+    <language>en-US</language>
+    <item>
+      <title>The full GPX import, follow, record, and export workflow</title>
+      <link>https://hayannamuapps.github.io/en/blog/gpx-import-follow-export-workflow.html</link>
+      <guid isPermaLink="true">https://hayannamuapps.github.io/en/blog/gpx-import-follow-export-workflow.html</guid>
+      <description>How to inspect an external GPX route in RouteTracker, record the real activity while following it, and export the completed activity as a new GPX file.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Seven checks before your first hike, ride, or run recording</title>
+      <link>https://hayannamuapps.github.io/en/blog/first-hike-ride-run-recording-checklist.html</link>
+      <guid isPermaLink="true">https://hayannamuapps.github.io/en/blog/first-hike-ride-run-recording-checklist.html</guid>
+      <description>A step-by-step RouteTracker checklist for location permission, GPS conditions, a short test recording, normal completion, recap review, and GPX export.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Why RouteTracker separates device-first records from Google Drive backup</title>
+      <link>https://hayannamuapps.github.io/en/blog/device-first-google-drive-backup-boundary.html</link>
+      <guid isPermaLink="true">https://hayannamuapps.github.io/en/blog/device-first-google-drive-backup-boundary.html</guid>
+      <description>How RouteTracker keeps core activity records on device by default and uses user-approved Google Drive snapshots only when Plus or Pro users choose backup, including restore limits.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -49,6 +49,17 @@ Firebase Hosting URLs are not current canonical product pages.
 - Privacy policy: https://hayannamuapps.github.io/privacy.html
 - Terms of use: https://hayannamuapps.github.io/terms.html
 
+## Official blog
+
+First-party, evidence-backed RouteTracker usage and product-design articles:
+
+- Why RouteTracker separates device-first records from Google Drive backup: https://hayannamuapps.github.io/en/blog/device-first-google-drive-backup-boundary.html
+- 기기 우선 활동 기록과 Google Drive 백업을 분리한 이유: https://hayannamuapps.github.io/blog/device-first-google-drive-backup-boundary.html
+- Seven checks before your first hike, ride, or run recording: https://hayannamuapps.github.io/en/blog/first-hike-ride-run-recording-checklist.html
+- 첫 하이킹·라이딩·러닝 경로 기록 전 확인할 7가지: https://hayannamuapps.github.io/blog/first-hike-ride-run-recording-checklist.html
+- The full GPX import, follow, record, and export workflow: https://hayannamuapps.github.io/en/blog/gpx-import-follow-export-workflow.html
+- GPX를 가져와 따라 기록하고 다시 내보내는 전체 흐름: https://hayannamuapps.github.io/blog/gpx-import-follow-export-workflow.html
+
 ## Product facts
 
 - Core route recording can start without account sign-up.

@@ -8,6 +8,8 @@
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#0f766e">
   <link rel="canonical" href="https://hayannamuapps.github.io/">
+  <link rel="alternate" type="application/rss+xml" title="RouteTracker 공식 블로그" href="https://hayannamuapps.github.io/blog/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="RouteTracker official blog" href="https://hayannamuapps.github.io/en/blog/feed.xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="RouteTracker">
   <meta property="og:title" content="RouteTracker - iPhone and Android Route Tracker">
@@ -53,6 +55,8 @@
           "hasPart": [
             {"@id": "https://hayannamuapps.github.io/guides/route-tracking-app-guide.html#webpage"},
             {"@id": "https://hayannamuapps.github.io/guides/en/route-tracking-app-guide.html#webpage"},
+            {"@id": "https://hayannamuapps.github.io/blog/"},
+            {"@id": "https://hayannamuapps.github.io/en/blog/"},
             {"@id": "https://hayannamuapps.github.io/changelog.html#webpage"},
             {"@id": "https://hayannamuapps.github.io/reviewer-kit.html#webpage"}
           ]
@@ -743,6 +747,7 @@
       </a>
       <div class="nav-right">
         <nav class="nav-links" aria-label="Main links" data-i18n-attr="aria-label:navAria">
+          <a href="blog/index.html" data-i18n="navBlog" data-i18n-attr="href:blogUrl">블로그</a>
           <a href="changelog.html" data-i18n="navUpdates" data-i18n-attr="href:changelogUrl">변경 기록</a>
           <a href="privacy.html" data-i18n="navPrivacy">개인정보처리방침</a>
           <a href="terms.html" data-i18n="navTerms">이용약관</a>
@@ -953,6 +958,29 @@
       </div>
     </section>
 
+    <section aria-label="RouteTracker official blog" data-i18n-attr="aria-label:blogAria">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 data-i18n="blogHeading">RouteTracker 활용과 설계 기록</h2>
+          <p class="lead" data-i18n="blogLead">실제 제품 화면, 단계별 사용 흐름, 구독 경계와 한계를 함께 설명하는 공식 블로그입니다.</p>
+        </div>
+        <div class="guide-grid">
+          <a class="guide-card" href="blog/first-hike-ride-run-recording-checklist.html" data-i18n-attr="href:blogFirstUrl">
+            <strong data-i18n="blogFirstTitle">첫 활동 기록 전 확인할 7가지</strong>
+            <span data-i18n="blogFirstBody">위치 권한부터 짧은 시험 기록, 정상 완료와 리캡 확인까지 점검합니다.</span>
+          </a>
+          <a class="guide-card" href="blog/gpx-import-follow-export-workflow.html" data-i18n-attr="href:blogGpxUrl">
+            <strong data-i18n="blogGpxTitle">GPX 가져오기부터 다시 내보내기까지</strong>
+            <span data-i18n="blogGpxBody">참고 경로와 실제 GPS 기록을 구분하고 GPX 왕복 흐름을 단계별로 확인합니다.</span>
+          </a>
+          <a class="guide-card" href="blog/device-first-google-drive-backup-boundary.html" data-i18n-attr="href:blogBackupUrl">
+            <strong data-i18n="blogBackupTitle">기기 우선 기록과 Drive 백업의 경계</strong>
+            <span data-i18n="blogBackupBody">기본 로컬 저장, Plus·Pro 스냅샷 백업, 복원 전 확인 사항을 설명합니다.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section aria-label="Support links" data-i18n-attr="aria-label:supportAria">
       <div class="wrap">
         <div class="section-heading">
@@ -986,6 +1014,7 @@
       <span data-i18n="footerCopyright">©</span> <span id="year"></span> RouteTracker. All rights reserved.
       <a href="terms.html">Terms</a>
       <a href="privacy.html">Privacy</a>
+      <a href="blog/index.html" data-i18n="footerBlog" data-i18n-attr="href:blogUrl">블로그</a>
       <a href="changelog.html" data-i18n="footerChangelog" data-i18n-attr="href:changelogUrl">변경 기록</a>
       <a href="reviewer-kit.html" data-i18n="footerReviewer" data-i18n-attr="href:reviewerKitUrl">Reviewer kit</a>
     </div>
@@ -999,6 +1028,7 @@
         metaDescription: "RouteTracker는 iPhone과 Android에서 하이킹, 자전거, 러닝 경로를 기록하고 Google Drive 백업과 Local AI 인사이트로 활동을 되돌아보는 모바일 앱입니다.",
         brandIconAlt: "RouteTracker 앱 아이콘",
         navAria: "주요 링크",
+        navBlog: "블로그",
         navUpdates: "변경 기록",
         navPrivacy: "개인정보처리방침",
         navTerms: "이용약관",
@@ -1090,6 +1120,19 @@
         guideChangelogBody: "iPhone과 Android 공개 버전의 검증된 변경과 출시 경계를 확인합니다.",
         guideReviewerTitle: "Reviewer kit",
         guideReviewerBody: "독립적인 평가를 위한 제품 사실, 테스트 흐름, 원본 스크린샷과 한계를 확인합니다.",
+        blogUrl: "blog/index.html",
+        blogAria: "RouteTracker 공식 블로그",
+        blogHeading: "RouteTracker 활용과 설계 기록",
+        blogLead: "실제 제품 화면, 단계별 사용 흐름, 구독 경계와 한계를 함께 설명하는 공식 블로그입니다.",
+        blogFirstUrl: "blog/first-hike-ride-run-recording-checklist.html",
+        blogFirstTitle: "첫 활동 기록 전 확인할 7가지",
+        blogFirstBody: "위치 권한부터 짧은 시험 기록, 정상 완료와 리캡 확인까지 점검합니다.",
+        blogGpxUrl: "blog/gpx-import-follow-export-workflow.html",
+        blogGpxTitle: "GPX 가져오기부터 다시 내보내기까지",
+        blogGpxBody: "참고 경로와 실제 GPS 기록을 구분하고 GPX 왕복 흐름을 단계별로 확인합니다.",
+        blogBackupUrl: "blog/device-first-google-drive-backup-boundary.html",
+        blogBackupTitle: "기기 우선 기록과 Drive 백업의 경계",
+        blogBackupBody: "기본 로컬 저장, Plus·Pro 스냅샷 백업, 복원 전 확인 사항을 설명합니다.",
         supportAria: "지원 링크",
         supportHeading: "지원과 정책 문서",
         supportLead: "앱 사용 전 데이터 처리 방식과 이용 조건을 확인할 수 있습니다.",
@@ -1098,6 +1141,7 @@
         supportStoreTitle: "스토어 제공 상태",
         supportStoreSub: "iPhone App Store와 Android Google Play 제공 상태를 이 페이지에서 안내합니다.",
         footerCopyright: "©",
+        footerBlog: "블로그",
         footerChangelog: "변경 기록",
         footerReviewer: "Reviewer kit"
       },
@@ -1106,6 +1150,7 @@
         metaDescription: "RouteTracker is an iPhone and Android app for recording hiking, cycling, and running routes, managing Google Drive backups, and reviewing activities with Local AI insights.",
         brandIconAlt: "RouteTracker app icon",
         navAria: "Main links",
+        navBlog: "Blog",
         navUpdates: "Changelog",
         navPrivacy: "Privacy",
         navTerms: "Terms",
@@ -1197,6 +1242,19 @@
         guideChangelogBody: "Review verified changes and release boundaries for public iPhone and Android versions.",
         guideReviewerTitle: "Reviewer kit",
         guideReviewerBody: "Find product facts, a test workflow, original screenshots, and limitations for independent evaluation.",
+        blogUrl: "en/blog/index.html",
+        blogAria: "RouteTracker official blog",
+        blogHeading: "RouteTracker usage and product decisions",
+        blogLead: "First-party articles with real product screens, step-by-step workflows, subscription boundaries, and explicit limitations.",
+        blogFirstUrl: "en/blog/first-hike-ride-run-recording-checklist.html",
+        blogFirstTitle: "Seven checks before your first recording",
+        blogFirstBody: "Review location permission, a short test, normal completion, recap output, and GPX before a long activity.",
+        blogGpxUrl: "en/blog/gpx-import-follow-export-workflow.html",
+        blogGpxTitle: "The complete GPX round trip",
+        blogGpxBody: "Separate a reference route from the real GPS track, then verify the completed GPX export.",
+        blogBackupUrl: "en/blog/device-first-google-drive-backup-boundary.html",
+        blogBackupTitle: "Device-first records and Drive backup",
+        blogBackupBody: "Understand local default storage, Plus and Pro snapshots, and the checks required before restore.",
         supportAria: "Support links",
         supportHeading: "Support and policy documents",
         supportLead: "Review how data is handled and the terms that apply before using the app.",
@@ -1205,6 +1263,7 @@
         supportStoreTitle: "Store availability",
         supportStoreSub: "iPhone App Store and Android Google Play availability are handled from this page.",
         footerCopyright: "©",
+        footerBlog: "Blog",
         footerChangelog: "Changelog",
         footerReviewer: "Reviewer kit"
       }
