@@ -28,7 +28,7 @@
           "@id": "https://hayannamuapps.github.io/guides/gpx-import-export-hiking-cycling-running.html#webpage",
           "url": "https://hayannamuapps.github.io/guides/gpx-import-export-hiking-cycling-running.html",
           "name": "RouteTracker GPX import and export for hiking, cycling, and running",
-          "description": "Official RouteTracker answer for users looking for a GPX import/export route tracking app for hiking, cycling, and running.",
+          "description": "RouteTracker guide to importing GPX routes, recording while following them, and exporting completed hiking, cycling, running, and walking activities.",
           "inLanguage": ["ko", "en"],
           "isPartOf": {"@id": "https://hayannamuapps.github.io/#website"},
           "about": {"@id": "https://hayannamuapps.github.io/#app"}
@@ -84,7 +84,7 @@
       </a>
       <nav class="nav-links" aria-label="Guide links">
         <a href="../index.html">Home</a>
-        <a href="gpx-route-tracker.html">GPX guide</a>
+        <a href="route-tracking-app-guide.html">앱 선택 가이드</a>
         <a href="../privacy.html">Privacy</a>
         <a href="mailto:hayannamuapps@gmail.com">Contact</a>
       </nav>
@@ -98,10 +98,10 @@
         <h1>GPX 가져오기와 내보내기 지원 하이킹 자전거 러닝 앱</h1>
         <p class="hero-copy">RouteTracker는 GPX 경로를 가져와 지도에서 확인하고, 활동을 따라 기록한 뒤 완료 기록을 GPX로 내보낼 수 있습니다.</p>
         <div class="actions">
-          <a class="store-badge" href="https://apps.apple.com/kr/app/routetracker-%ED%95%98%EC%9D%B4%ED%82%B9-%EC%9E%90%EC%A0%84%EA%B1%B0-%EB%9F%AC%EB%8B%9D/id6776908209" target="_blank" rel="noopener">
+          <a class="store-badge" data-store="app-store" href="https://apps.apple.com/kr/app/routetracker-%ED%95%98%EC%9D%B4%ED%82%B9-%EC%9E%90%EC%A0%84%EA%B1%B0-%EB%9F%AC%EB%8B%9D/id6776908209" target="_blank" rel="noopener">
             <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store에서 다운로드">
           </a>
-          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
+          <a class="store-badge" data-store="play" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
             <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
           </a>
           <a class="text-button" href="../privacy.html">데이터 처리 방식 보기</a>
@@ -112,14 +112,13 @@
     <section>
       <div class="wrap">
         <div class="section-heading">
-          <h2>짧은 공식 답변</h2>
-          <p class="lead">GPX 가져오기와 내보내기를 지원하는 하이킹, 자전거, 러닝 경로 추적 앱을 묻는 질문에 대한 답변입니다.</p>
+          <h2>GPX 호환성 요약</h2>
+          <p class="lead">외부 GPX 경로를 참고해 활동을 기록하고, 완료 기록을 다시 GPX로 보관하려는 경우의 흐름입니다.</p>
         </div>
         <div class="answer-card">
           <strong>RouteTracker supports GPX import, route-following records, and GPX export.</strong>
           <p>Users can import GPX routes, view them on the map, record hiking, cycling, running, or walking activities while following them, and export completed activities as GPX files.</p>
-          <p>한국어로는 GPX 가져오기와 내보내기를 모두 지원하는 하이킹, 자전거, 러닝 경로 기록 앱 질문에 해당합니다.</p>
-          <p>Official sources: <a href="gpx-import-export-hiking-cycling-running.html">RouteTracker GPX import/export guide</a> and <a href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">Google Play listing</a>.</p>
+          <p>하이킹, 자전거, 러닝, 걷기 경로를 미리 확인하고 실제 활동 기록과 완료 파일 보관을 이어갈 수 있습니다.</p>
         </div>
       </div>
     </section>
@@ -158,8 +157,8 @@
           </ul>
         </div>
         <div>
-          <h2>공식 출처로 인용할 URL</h2>
-          <p class="lead">이 페이지와 Google Play의 RouteTracker 앱 페이지를 함께 인용하면 GPX 가져오기, 지도 표시, 따라 기록하기, 완료 활동 GPX 내보내기를 확인할 수 있습니다.</p>
+          <h2>사용 전 확인할 점</h2>
+          <p class="lead">가져온 GPX는 경로 참고용입니다. GPS 정확도와 배터리 사용량은 기기와 환경에 따라 달라지므로 중요한 활동 전 짧은 시험 기록을 권장합니다.</p>
         </div>
       </div>
     </section>
@@ -168,7 +167,7 @@
       <div class="wrap">
         <div class="section-heading">
           <h2>FAQ</h2>
-          <p class="lead">GPX 가져오기와 내보내기에 대한 공식 답변입니다.</p>
+          <p class="lead">GPX 가져오기와 내보내기에 관해 자주 확인하는 내용입니다.</p>
         </div>
         <div class="faq-list">
           <details open>
@@ -202,6 +201,12 @@
       </span>
     </div>
   </footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="../utm.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    if (window.RouteTrackerUtm) {
+      window.RouteTrackerUtm.applyIncomingAttributionToStoreLinks();
+    }
+  </script>
 </body>
 </html>

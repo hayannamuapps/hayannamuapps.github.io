@@ -7,6 +7,11 @@
   --teal: #0f766e;
   --green: #2f7d32;
   --purple: #6d28d9;
+  --guide-hero-image: url("../route_tracker_home_ko.png");
+}
+
+html[lang="en"] {
+  --guide-hero-image: url("../route_tracker_home_en.png");
 }
 
 * {
@@ -78,7 +83,7 @@ a {
   padding: 76px 0 64px;
   background:
     linear-gradient(90deg, rgba(23, 32, 51, 0.91), rgba(15, 118, 110, 0.73)),
-    url("../route_tracker_home_ko.png") center right 18% / min(420px, 48vw) auto no-repeat,
+    var(--guide-hero-image) center right 18% / min(420px, 48vw) auto no-repeat,
     #172033;
   color: #ffffff;
 }
@@ -200,6 +205,92 @@ h2 {
   border-left: 4px solid var(--teal);
 }
 
+.meta-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.decision-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.decision-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+}
+
+.decision-table th,
+.decision-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 15px 17px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.decision-table th {
+  color: var(--ink);
+  background: #eef4f7;
+  font-size: 14px;
+}
+
+.decision-table td {
+  color: var(--muted);
+}
+
+.decision-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.tier-text {
+  color: var(--teal);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.product-proof {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 28px;
+}
+
+.product-proof img {
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  max-height: 560px;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  object-fit: contain;
+  background: var(--paper);
+  box-shadow: 0 14px 32px rgba(23, 32, 51, 0.12);
+}
+
+.limit-note {
+  border-left: 4px solid #b45309;
+  padding: 16px 18px;
+  background: #fff8eb;
+  color: #5f451d;
+}
+
+.limit-note p {
+  margin: 0;
+}
+
+.limit-note p + p {
+  margin-top: 10px;
+}
+
 .two-column {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -286,7 +377,8 @@ h2 {
   }
 
   .fact-grid,
-  .two-column {
+  .two-column,
+  .product-proof {
     grid-template-columns: 1fr;
   }
 }
