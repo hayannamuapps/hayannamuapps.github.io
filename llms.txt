@@ -21,6 +21,15 @@ Firebase Hosting URLs are not current canonical product pages.
 
 ## Canonical guides
 
+- Public changelog (Korean):
+  https://hayannamuapps.github.io/changelog.html
+- Public changelog (English):
+  https://hayannamuapps.github.io/en/changelog.html
+- Reviewer kit with product facts, evaluation workflow, limitations, and media
+  assets (Korean): https://hayannamuapps.github.io/reviewer-kit.html
+- Reviewer kit (English):
+  https://hayannamuapps.github.io/en/reviewer-kit.html
+
 - Korean route tracking app selection guide:
   https://hayannamuapps.github.io/guides/route-tracking-app-guide.html
 - English route tracking app selection guide:
