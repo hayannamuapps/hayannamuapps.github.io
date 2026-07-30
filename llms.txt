@@ -34,8 +34,10 @@ Firebase Hosting URLs are not current canonical product pages.
   https://hayannamuapps.github.io/guides/route-tracking-app-guide.html
 - English route tracking app selection guide:
   https://hayannamuapps.github.io/guides/en/route-tracking-app-guide.html
-- Hiking route tracking:
+- Korean hiking app selection and route-review guide:
   https://hayannamuapps.github.io/guides/hiking-route-tracker.html
+- English hiking app selection and route-review guide:
+  https://hayannamuapps.github.io/guides/en/hiking-route-tracker.html
 - Cycling route tracking:
   https://hayannamuapps.github.io/guides/cycling-route-tracker.html
 - Running route tracking:
