@@ -14,7 +14,7 @@ contain the complete, human-readable product information.
 - Google Play: https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker
 - Google Play package: com.hayannamuapps.route_tracker
 - Apple App Store ID: 6776908209
-- Publisher: Hayannamu Apps
+- Publisher: HayanNamuApps
 
 The GitHub Pages domain above is the canonical RouteTracker website. Legacy
 Firebase Hosting URLs are not current canonical product pages.
