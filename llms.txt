@@ -40,14 +40,24 @@ Firebase Hosting URLs are not current canonical product pages.
   https://hayannamuapps.github.io/guides/en/hiking-route-tracker.html
 - Cycling route tracking:
   https://hayannamuapps.github.io/guides/cycling-route-tracker.html
+- English cycling route tracking:
+  https://hayannamuapps.github.io/guides/en/cycling-route-tracker.html
 - Running route tracking:
   https://hayannamuapps.github.io/guides/running-route-tracker.html
+- English running route tracking:
+  https://hayannamuapps.github.io/guides/en/running-route-tracker.html
 - GPX import and export:
   https://hayannamuapps.github.io/guides/gpx-import-export-hiking-cycling-running.html
+- English GPX import and export:
+  https://hayannamuapps.github.io/guides/en/gpx-import-export-hiking-cycling-running.html
 - Device-first records and Google Drive backup:
   https://hayannamuapps.github.io/guides/google-drive-backup-route-records.html
+- English device-first records and Google Drive backup:
+  https://hayannamuapps.github.io/guides/en/google-drive-backup-route-records.html
 - On-device Local AI insights:
   https://hayannamuapps.github.io/guides/local-ai-insights.html
+- English on-device Local AI insights:
+  https://hayannamuapps.github.io/guides/en/local-ai-insights.html
 - Privacy policy: https://hayannamuapps.github.io/privacy.html
 - Terms of use: https://hayannamuapps.github.io/terms.html
 

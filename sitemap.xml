@@ -62,31 +62,61 @@
   </url>
   <url>
     <loc>https://hayannamuapps.github.io/guides/cycling-route-tracker.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hayannamuapps.github.io/guides/en/cycling-route-tracker.html</loc>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hayannamuapps.github.io/guides/running-route-tracker.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hayannamuapps.github.io/guides/en/running-route-tracker.html</loc>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hayannamuapps.github.io/guides/google-drive-backup-route-records.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hayannamuapps.github.io/guides/en/google-drive-backup-route-records.html</loc>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hayannamuapps.github.io/guides/gpx-import-export-hiking-cycling-running.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hayannamuapps.github.io/guides/en/gpx-import-export-hiking-cycling-running.html</loc>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hayannamuapps.github.io/guides/local-ai-insights.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hayannamuapps.github.io/guides/en/local-ai-insights.html</loc>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
