@@ -3,45 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RouteTracker: Hike, Bike, Run | iPhone and Android Route Tracker</title>
-  <meta name="description" content="RouteTracker records hiking, cycling, running, and walking routes on iPhone and Android, with GPX import and export, device-first activity records, Google Drive backup, and on-device Local AI insights.">
+  <title>RouteTracker - iPhone and Android Route Tracker</title>
+  <meta name="description" content="RouteTracker is an iPhone and Android app for recording hiking, cycling, and running routes, managing Google Drive backups, and reviewing activities with Local AI insights.">
   <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0f766e">
   <link rel="canonical" href="https://hayannamuapps.github.io/en/">
   <link rel="alternate" hreflang="ko" href="https://hayannamuapps.github.io/">
   <link rel="alternate" hreflang="en" href="https://hayannamuapps.github.io/en/">
   <link rel="alternate" hreflang="x-default" href="https://hayannamuapps.github.io/en/">
+  <link rel="alternate" type="application/rss+xml" title="RouteTracker 공식 블로그" href="https://hayannamuapps.github.io/blog/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="RouteTracker official blog" href="https://hayannamuapps.github.io/en/blog/feed.xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="RouteTracker">
-  <meta property="og:title" content="RouteTracker: Hike, Bike, Run | iPhone and Android Route Tracker">
-  <meta property="og:description" content="Record outdoor routes, keep GPX files and notes, protect activity history with Google Drive backup, and review patterns with on-device Local AI insights.">
+  <meta property="og:title" content="RouteTracker - iPhone and Android Route Tracker">
+  <meta property="og:description" content="Record routes, review activities, manage Google Drive backups, and use Plus/Pro planning, analysis, and Local AI features. Available on the App Store and Google Play.">
   <meta property="og:url" content="https://hayannamuapps.github.io/en/">
   <meta property="og:image" content="https://hayannamuapps.github.io/route_tracker_home_en.png">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="2200">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="ko_KR">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="RouteTracker: Hike, Bike, Run">
-  <meta name="twitter:description" content="An iPhone and Android route tracker for hiking, cycling, running, and walking activities.">
+  <meta name="twitter:title" content="RouteTracker - iPhone and Android Route Tracker">
+  <meta name="twitter:description" content="Record hiking, cycling, and running routes with Google Drive backup, Plus/Pro planning, analysis, and on-device Local AI insights.">
   <meta name="twitter:image" content="https://hayannamuapps.github.io/route_tracker_home_en.png">
   <link rel="icon" href="../route_tracker.png" type="image/png">
-  <link rel="stylesheet" href="../guides/guide.css">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "WebPage",
-          "@id": "https://hayannamuapps.github.io/en/#webpage",
-          "url": "https://hayannamuapps.github.io/en/",
-          "name": "RouteTracker: Hike, Bike, Run",
-          "description": "The official English RouteTracker site for hiking, cycling, running, and walking route recording on iPhone and Android.",
-          "inLanguage": "en",
-          "dateModified": "2026-08-01",
-          "isPartOf": {"@id": "https://hayannamuapps.github.io/#website"},
-          "about": {"@id": "https://hayannamuapps.github.io/#app"},
-          "publisher": {"@id": "https://hayannamuapps.github.io/#organization"},
-          "primaryImageOfPage": {
+          "@type": "Organization",
+          "@id": "https://hayannamuapps.github.io/#organization",
+          "name": "HayanNamuApps",
+          "url": "https://hayannamuapps.github.io/",
+          "email": "hayannamuapps@gmail.com",
+          "logo": {
             "@type": "ImageObject",
-            "url": "https://hayannamuapps.github.io/route_tracker_home_en.png"
+            "url": "https://hayannamuapps.github.io/route_tracker.png",
+            "width": 1024,
+            "height": 1024
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://hayannamuapps.github.io/#website",
+          "name": "RouteTracker",
+          "url": "https://hayannamuapps.github.io/en/",
+          "description": "RouteTracker is the official support and marketing site for the iPhone and Android route tracking app.",
+          "inLanguage": "en",
+          "publisher": {
+            "@id": "https://hayannamuapps.github.io/#organization"
+          },
+          "hasPart": [
+            {
+              "@id": "https://hayannamuapps.github.io/guides/route-tracking-app-guide.html#webpage"
+            },
+            {
+              "@id": "https://hayannamuapps.github.io/guides/en/route-tracking-app-guide.html#webpage"
+            },
+            {
+              "@id": "https://hayannamuapps.github.io/blog/"
+            },
+            {
+              "@id": "https://hayannamuapps.github.io/en/blog/"
+            },
+            {
+              "@id": "https://hayannamuapps.github.io/changelog.html#webpage"
+            },
+            {
+              "@id": "https://hayannamuapps.github.io/reviewer-kit.html#webpage"
+            }
+          ]
+        },
+        {
+          "@type": "MobileApplication",
+          "@id": "https://hayannamuapps.github.io/#app",
+          "name": "RouteTracker",
+          "alternateName": [
+            "RouteTracker: Hike, Bike, Run",
+            "RouteTracker: 하이킹 · 자전거 · 러닝"
+          ],
+          "identifier": [
+            {
+              "@type": "PropertyValue",
+              "propertyID": "Google Play package",
+              "value": "com.hayannamuapps.route_tracker"
+            },
+            {
+              "@type": "PropertyValue",
+              "propertyID": "Apple App Store ID",
+              "value": "6776908209"
+            }
+          ],
+          "url": "https://hayannamuapps.github.io/en/",
+          "description": "RouteTracker records hiking, cycling, running, and walking routes, keeps activity records on device by default, and supports Google Drive backup, route planning, analysis, and on-device Local AI insights through Plus and Pro features.",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": [
+            "iOS",
+            "Android"
+          ],
+          "downloadUrl": [
+            "https://apps.apple.com/us/app/routetracker-hike-bike-run/id6776908209",
+            "https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker"
+          ],
+          "installUrl": [
+            "https://apps.apple.com/us/app/routetracker-hike-bike-run/id6776908209",
+            "https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker"
+          ],
+          "sameAs": [
+            "https://apps.apple.com/us/app/routetracker-hike-bike-run/id6776908209",
+            "https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker"
+          ],
+          "isAccessibleForFree": true,
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "image": "https://hayannamuapps.github.io/route_tracker.png",
+          "screenshot": [
+            "https://hayannamuapps.github.io/route_tracker_home_ko.png",
+            "https://hayannamuapps.github.io/route_tracker_home_en.png"
+          ],
+          "subjectOf": [
+            {
+              "@id": "https://hayannamuapps.github.io/guides/route-tracking-app-guide.html#webpage"
+            },
+            {
+              "@id": "https://hayannamuapps.github.io/guides/en/route-tracking-app-guide.html#webpage"
+            },
+            {
+              "@id": "https://hayannamuapps.github.io/changelog.html#webpage"
+            },
+            {
+              "@id": "https://hayannamuapps.github.io/reviewer-kit.html#webpage"
+            }
+          ],
+          "featureList": [
+            "Route recording for hiking, cycling, running, and walking",
+            "Activity maps, calendar history, and core statistics",
+            "GPX import and export",
+            "Google Drive backup and restore",
+            "Plus file attachments and ad removal",
+            "Pro route planning, advanced maps, analysis, and on-device Local AI insights"
+          ],
+          "availableLanguage": [
+            "ko",
+            "en"
+          ],
+          "publisher": {
+            "@id": "https://hayannamuapps.github.io/#organization"
           }
         },
         {
@@ -53,31 +166,31 @@
               "name": "What is RouteTracker?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "RouteTracker is an iPhone and Android app for recording hiking, cycling, running, and walking routes, then reviewing completed activities with maps, calendar history, core metrics, GPX files, and notes."
+                "text": "RouteTracker is a mobile app for recording hiking, cycling, running, and walking routes, then reviewing completed activities with maps, calendar history, core stats, GPX files, and notes."
               }
             },
             {
               "@type": "Question",
-              "name": "Does RouteTracker support GPX import and export?",
+              "name": "Where is RouteTracker currently available?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. RouteTracker can import a GPX route, display it on the map while recording, and export a completed activity as a GPX file."
+                "text": "RouteTracker is available for iPhone on the App Store and for Android on Google Play."
               }
             },
             {
               "@type": "Question",
-              "name": "Where are RouteTracker activity records stored?",
+              "name": "Where is activity data stored?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Core activity records stay on the device until the user chooses backup. Plus and Pro support user-approved Google Drive backup and restore."
+                "text": "Activity data stays on the device unless the user chooses backup. When backup is enabled, RouteTracker stores and restores snapshots within the user-approved Google Drive scope."
               }
             },
             {
               "@type": "Question",
-              "name": "What are RouteTracker Plus and Pro for?",
+              "name": "How are Plus and Pro different?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Plus focuses on ad removal, file attachments, and Google Drive backup and restore. Pro includes Plus and adds route planning, advanced maps, analysis, and on-device Local AI insights."
+                "text": "Plus focuses on keeping and protecting activity history with ad removal, file attachments, and Google Drive backup and restore. Pro includes Plus and adds route planning, advanced maps, deeper analysis, and Local AI insights."
               }
             }
           ]
@@ -85,119 +198,823 @@
       ]
     }
   </script>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5d687a;
+      --line: #d8e1ea;
+      --paper: #ffffff;
+      --soft: #f5f8fb;
+      --teal: #0f766e;
+      --green: #2f7d32;
+      --purple: #6d28d9;
+      --shadow: 0 16px 36px rgba(23, 32, 51, 0.12);
+      --hero-image: url("../route_tracker_home_ko.png");
+    }
+
+    html[lang="en"] {
+      --hero-image: url("../route_tracker_home_en.png");
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      right: 0;
+      color: #ffffff;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+    }
+
+    .nav-right {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 16px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      opacity: 0.92;
+    }
+
+    .language-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      border-radius: 999px;
+      padding: 4px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .language-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 42px;
+      min-height: 30px;
+      border: 0;
+      border-radius: 999px;
+      padding: 0 10px;
+      color: rgba(255, 255, 255, 0.82);
+      background: transparent;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .language-button.is-active {
+      color: var(--teal);
+      background: #ffffff;
+    }
+
+    .hero {
+      min-height: 690px;
+      color: #ffffff;
+      background-image:
+        linear-gradient(90deg, rgba(13, 21, 34, 0.94) 0%, rgba(13, 21, 34, 0.83) 42%, rgba(13, 21, 34, 0.32) 100%),
+        var(--hero-image);
+      background-position: center right;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      padding: 118px 0 86px;
+    }
+
+    .hero-content {
+      max-width: 690px;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: #99f6e4;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 56px;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      margin: 24px 0 0;
+      max-width: 620px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 20px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .store-badge img,
+    .play-badge img {
+      display: block;
+      width: auto;
+      height: 54px;
+    }
+
+    .text-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      border-radius: 8px;
+      padding: 0 18px;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.10);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .store-status {
+      margin: 14px 0 0;
+      max-width: 560px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero-facts {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 38px;
+      max-width: 820px;
+    }
+
+    .hero-fact {
+      border: 1px solid rgba(255, 255, 255, 0.20);
+      border-radius: 8px;
+      padding: 13px 14px;
+      background: rgba(255, 255, 255, 0.09);
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    section {
+      padding: 66px 0;
+    }
+
+    section:nth-child(even) {
+      background: var(--soft);
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 34px;
+      line-height: 1.22;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .tier {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .tier-label {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      border-radius: 999px;
+      padding: 0 10px;
+      color: #ffffff;
+      background: var(--teal);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .tier-label.plus {
+      background: var(--green);
+    }
+
+    .tier-label.pro {
+      background: var(--purple);
+    }
+
+    .tier h3 {
+      margin: 16px 0 10px;
+      font-size: 22px;
+      line-height: 1.3;
+      letter-spacing: 0;
+    }
+
+    .tier p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .intent-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .intent-card {
+      min-height: 150px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(23, 32, 51, 0.08);
+    }
+
+    .intent-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.32;
+    }
+
+    .intent-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .privacy-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 34px;
+      align-items: start;
+    }
+
+    .privacy-points {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .privacy-points li {
+      border-left: 4px solid var(--teal);
+      padding: 8px 0 8px 16px;
+      color: var(--muted);
+      background: rgba(15, 118, 110, 0.06);
+    }
+
+    .privacy-points strong {
+      display: block;
+      color: var(--ink);
+      font-size: 16px;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+      margin: 28px 0 0;
+    }
+
+    .faq-list details {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: 0 10px 24px rgba(23, 32, 51, 0.08);
+    }
+
+    .faq-list summary {
+      cursor: pointer;
+      padding: 18px 20px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .faq-list p {
+      margin: 0;
+      padding: 0 20px 20px;
+      color: var(--muted);
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .guide-card {
+      min-height: 132px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(23, 32, 51, 0.08);
+    }
+
+    .guide-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.32;
+    }
+
+    .guide-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .support-links {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .support-link {
+      min-height: 78px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(23, 32, 51, 0.08);
+    }
+
+    .support-link strong {
+      display: block;
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .support-link span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 22px 0;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .footer a {
+      margin: 0 8px;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-right {
+        justify-content: flex-start;
+      }
+
+      .hero {
+        min-height: 650px;
+        background-position: center right 28%;
+        padding-top: 154px;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      .hero-copy {
+        font-size: 18px;
+      }
+
+      .hero-facts,
+      .tier-grid,
+      .intent-grid,
+      .guide-grid,
+      .privacy-layout,
+      .support-links {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .wrap {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .nav-right {
+        gap: 12px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .hero {
+        min-height: 0;
+        background-image:
+          linear-gradient(180deg, rgba(13, 21, 34, 0.95) 0%, rgba(13, 21, 34, 0.88) 52%, rgba(13, 21, 34, 0.64) 100%),
+          var(--hero-image);
+        background-position: center bottom;
+        padding-top: 170px;
+        padding-bottom: 18px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      .actions {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .play-badge img {
+        width: 168px;
+      }
+
+      section {
+        padding: 46px 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="./"><img src="../route_tracker.png" alt="RouteTracker app icon"><span>RouteTracker</span></a>
-      <nav class="nav-links" aria-label="Main links">
-        <a href="../guides/en/route-tracking-app-guide.html">Guides</a>
-        <a href="../en/blog/">Blog</a>
-        <a href="../en/changelog.html">Changelog</a>
-        <a href="../privacy_policy_en.html">Privacy</a>
-        <a href="../">한국어</a>
-      </nav>
+      <a class="brand" href="./">
+        <img src="../route_tracker.png" alt="RouteTracker app icon">
+        <span>RouteTracker</span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links" aria-label="Main links">
+          <a href="../en/blog/index.html">Blog</a>
+          <a href="../en/changelog.html">Changelog</a>
+          <a href="../privacy_policy_en.html">Privacy</a>
+          <a href="../terms_of_use_en.html">Terms</a>
+          <a href="mailto:hayannamuapps@gmail.com">Contact</a>
+        </nav>
+        <div class="language-toggle" aria-label="Language">
+          <a class="language-button" href="../" data-language-button="ko" lang="ko" aria-current="false">KO</a>
+          <a class="language-button is-active" href="./" data-language-button="en" lang="en" aria-current="page">EN</a>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" aria-label="RouteTracker introduction">
       <div class="wrap">
-        <p class="breadcrumb">RouteTracker / Official English site</p>
-        <h1>RouteTracker: Hike, Bike, Run</h1>
-        <p class="hero-copy">Record outdoor routes, keep GPX files and notes with each activity, and review your route history with device-first storage, Google Drive backup, and on-device Local AI insights.</p>
-        <p class="meta-line"><span>iPhone - Android</span><span>Hiking - cycling - running - walking</span><span>Publisher: HayanNamuApps</span></p>
-        <div class="actions">
-          <a class="store-badge" data-store="app-store" href="https://apps.apple.com/us/app/routetracker-hike-bike-run/id6776908209" target="_blank" rel="noopener"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"></a>
-          <a class="play-badge" data-store="play" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play"></a>
+        <div class="hero-content">
+          <p class="eyebrow">Hiking, cycling, and running route tracking</p>
+          <h1>RouteTracker</h1>
+          <p class="hero-copy">Record your route, keep GPX files and notes with each activity, and manage your activity history with Google Drive backup.</p>
+          <div class="actions">
+            <a class="store-badge" data-store="app-store" href="https://apps.apple.com/us/app/routetracker-hike-bike-run/id6776908209" target="_blank" rel="noopener">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+            <a class="store-badge" data-store="play" href="https://play.google.com/store/apps/details?id=com.hayannamuapps.route_tracker" target="_blank" rel="noopener">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+            </a>
+            <a class="text-button" href="../privacy_policy_en.html">See how data is handled</a>
+          </div>
+          <p class="store-status">RouteTracker is available for iPhone on the App Store and for Android on Google Play.</p>
+          <div class="hero-facts" aria-label="Key features">
+            <div class="hero-fact">Start core tracking without an account</div>
+            <div class="hero-fact">Device-based storage by default</div>
+            <div class="hero-fact">Google Drive backup and restore</div>
+            <div class="hero-fact">Clear Plus and Pro tiers</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="wrap">
-        <div class="section-heading">
-          <h2>What RouteTracker does</h2>
-          <p class="lead">The product is organized around personal route history and preparing for the next activity.</p>
-        </div>
-        <div class="fact-grid">
-          <article class="fact-card"><strong>Hiking, cycling, running, and walking</strong><p>Record route maps with distance, time, speed or pace, elevation, calendar history, and notes.</p></article>
-          <article class="fact-card"><strong>GPX import and export</strong><p>Import a reference GPX route, view it on the map while recording, and export the completed activity as GPX.</p></article>
-          <article class="fact-card"><strong>Device-first activity records</strong><p>Start core recording without account sign-up. Activity history stays on the device unless you choose backup.</p></article>
-          <article class="fact-card"><strong>Google Drive backup</strong><p>Plus and Pro support user-approved manual or automatic activity snapshot backup and restore within Google Drive.</p></article>
-          <article class="fact-card"><strong>Route planning and analysis</strong><p>Pro adds route planning, advanced maps, offline cache, repeated-route comparison, and growth charts.</p></article>
-          <article class="fact-card"><strong>On-device Local AI insights</strong><p>Pro can summarize speed, pace, elevation, and repeated-route patterns on the device as reference analysis.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section>
+    <section aria-label="RouteTracker feature flow">
       <div class="wrap">
         <div class="section-heading">
-          <h2>Choose by the job you need to repeat</h2>
-          <p class="lead">Compare the recording flow, data boundary, GPX handling, and paid feature boundary before choosing a route tracker.</p>
+          <h2>Record first, keep it protected, and prepare better for the next activity.</h2>
+          <p class="lead">RouteTracker keeps the free tracking experience simple, then separates Plus and Pro into storage, protection, planning, and analysis features.</p>
         </div>
-        <div class="decision-table-wrap">
-          <table class="decision-table">
-            <thead><tr><th scope="col">Common question</th><th scope="col">RouteTracker answer</th><th scope="col">Tier</th></tr></thead>
-            <tbody>
-              <tr><td>Can I record more than one outdoor activity?</td><td>Yes. RouteTracker records hiking, cycling, running, and walking routes in one activity history.</td><td><span class="tier-text">Core</span></td></tr>
-              <tr><td>Can I follow a GPX route and keep the real activity?</td><td>Import the GPX as a map reference, record the actual GPS activity, and export the completed activity separately.</td><td><span class="tier-text">Core</span></td></tr>
-              <tr><td>Can I keep records private by default?</td><td>Core activity records stay on the device until the user chooses a backup destination.</td><td><span class="tier-text">Core</span></td></tr>
-              <tr><td>Can I back up and restore activity history?</td><td>Plus and Pro support snapshots within the Google Drive account and scope approved by the user.</td><td><span class="tier-text">Plus - Pro</span></td></tr>
-              <tr><td>Can I plan routes and review repeated activities?</td><td>Pro adds planning, advanced maps, offline preparation, repeated-route analysis, growth charts, and Local AI reference insights.</td><td><span class="tier-text">Pro</span></td></tr>
-            </tbody>
-          </table>
+        <div class="tier-grid">
+          <article class="tier">
+            <span class="tier-label">Basic</span>
+            <h3>Track and review routes</h3>
+            <p>Save activities with maps, calendar history, core stats, and GPX import/export for the routes you complete today.</p>
+          </article>
+          <article class="tier">
+            <span class="tier-label plus">Plus</span>
+            <h3>Keep and protect records</h3>
+            <p>Remove ads, attach files, and keep activity snapshots with manual or automatic Google Drive backup.</p>
+          </article>
+          <article class="tier">
+            <span class="tier-label pro">Pro</span>
+            <h3>Plan and analyze</h3>
+            <p>Use advanced route planning, offline cache, segment comparison, growth charts, and Local AI insights to prepare for what comes next.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="wrap product-proof">
-        <img src="../route_tracker_home_en.png" alt="RouteTracker English home screen with record, route planning, and GPX import actions" width="1080" height="2200">
+    <section aria-label="RouteTracker features by user need">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>RouteTracker features by user need</h2>
+          <p class="lead">Find focused answers for route tracking, backup, GPX, and analysis situations people commonly ask about.</p>
+        </div>
+        <div class="intent-grid">
+          <a class="intent-card" href="../privacy_policy_en.html">
+            <strong>Privacy-first route tracking</strong>
+            <span>Core tracking can start without account sign-up, and activity data stays on the device unless the user chooses backup.</span>
+          </a>
+          <a class="intent-card" href="../guides/en/gpx-import-export-hiking-cycling-running.html">
+            <strong>GPX import and export</strong>
+            <span>Import GPX routes, view them on the map, record while following them, and export completed activities as GPX files.</span>
+          </a>
+          <a class="intent-card" href="../guides/en/google-drive-backup-route-records.html">
+            <strong>Google Drive backup</strong>
+            <span>Plus and Pro support activity snapshot backup and restore within the user-approved Google Drive scope.</span>
+          </a>
+          <a class="intent-card" href="../guides/en/hiking-route-tracker.html">
+            <strong>Hiking and trail review</strong>
+            <span>Review hikes and trail activities with maps, elevation, distance, time, GPX files, and notes.</span>
+          </a>
+          <a class="intent-card" href="../guides/en/cycling-route-tracker.html">
+            <strong>Cycling ride records</strong>
+            <span>Manage ride routes, speed, elevation, calendar history, GPX files, and Pro repeated-record analysis.</span>
+          </a>
+          <a class="intent-card" href="../guides/en/running-route-tracker.html">
+            <strong>Running pace and recap</strong>
+            <span>Organize running routes, pace, distance, elevation, GPX export, recap cards, and Pro analysis.</span>
+          </a>
+          <a class="intent-card" href="../guides/en/local-ai-insights.html">
+            <strong>On-device Local AI insights</strong>
+            <span>Pro summarizes speed, pace, elevation, and repeated-route patterns on device as reference activity analysis.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Privacy and data management">
+      <div class="wrap privacy-layout">
         <div>
-          <h2>A practical route-recording flow</h2>
-          <ol class="check-list">
-            <li>Check location permission, battery, and the activity environment before starting.</li>
-            <li>Import a GPX route when you need a reference and confirm the map before recording.</li>
-            <li>Run a short test recording, then complete the activity and verify the map and core metrics.</li>
-            <li>Export important completed activities as GPX and choose Google Drive backup when you need a second copy.</li>
-          </ol>
-          <p><a class="text-button" href="../en/blog/first-hike-ride-run-recording-checklist.html">Read the first-recording checklist</a></p>
+          <h2>Manage your records your way.</h2>
+          <p class="lead">RouteTracker stores activity data on your device until you choose to back it up. When backup is enabled, snapshots are saved to the Google Drive account you connect.</p>
         </div>
+        <ul class="privacy-points">
+          <li>
+            <strong>Location tracking</strong>
+            <span>Explicit permission is required to show your current location and record activity routes.</span>
+          </li>
+          <li>
+            <strong>Google Drive</strong>
+            <span>For Plus and higher tiers, RouteTracker accesses only the user-approved scope needed for backup and restore.</span>
+          </li>
+          <li>
+            <strong>Health data</strong>
+            <span>For Pro features, user-approved heart rate data from Apple Health or Health Connect can be reflected in activity analysis.</span>
+          </li>
+          <li>
+            <strong>Local AI</strong>
+            <span>Pro Local AI insights run on device, while downloading model files may contact model hosting providers such as Hugging Face.</span>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section>
+    <section id="faq" aria-label="RouteTracker frequently asked questions">
       <div class="wrap">
         <div class="section-heading">
-          <h2>Official English guides</h2>
-          <p class="lead">Use the pages below for selection criteria, activity workflows, GPX handling, backup, Local AI, and product facts.</p>
+          <h2>Key facts to review before installing</h2>
+          <p class="lead">A concise summary of availability, data handling, and subscription tiers.</p>
         </div>
-        <div class="fact-grid">
-          <article class="fact-card"><strong><a href="../guides/en/route-tracking-app-guide.html">How to choose a hiking, cycling, or running app</a></strong><p>Compare GPS recording, GPX support, privacy, backup, offline preparation, analysis, and limitations.</p></article>
-          <article class="fact-card"><strong><a href="../guides/en/hiking-route-tracker.html">How to choose a hiking app</a></strong><p>Review completed hikes with maps, elevation, GPX, device-first storage, backup, and realistic limitations.</p></article>
-          <article class="fact-card"><strong><a href="../guides/en/cycling-route-tracker.html">Cycling route tracker for rides</a></strong><p>Review ride maps, speed, elevation, GPX, backup, and repeated-ride analysis.</p></article>
-          <article class="fact-card"><strong><a href="../guides/en/running-route-tracker.html">Running route tracker with pace and recap</a></strong><p>Review running routes, pace, recap cards, GPX export, and repeated-route progress.</p></article>
-          <article class="fact-card"><strong><a href="../guides/en/gpx-import-export-hiking-cycling-running.html">GPX import and export workflow</a></strong><p>Separate a reference GPX route from the real activity and export the completed record.</p></article>
-          <article class="fact-card"><strong><a href="../guides/en/google-drive-backup-route-records.html">Device-first records and Google Drive backup</a></strong><p>Understand local storage, user-approved snapshots, restore boundaries, and Plus or Pro requirements.</p></article>
-          <article class="fact-card"><strong><a href="../guides/en/local-ai-insights.html">On-device Local AI activity insights</a></strong><p>Review what Pro summarizes, where it runs, how model downloads work, and what it does not guarantee.</p></article>
-          <article class="fact-card"><strong><a href="../en/blog/gpx-import-follow-export-workflow.html">The detailed GPX product workflow</a></strong><p>Read the first-party article about importing, following, recording, and exporting a route.</p></article>
-          <article class="fact-card"><strong><a href="../en/blog/device-first-google-drive-backup-boundary.html">The detailed backup product boundary</a></strong><p>Read how device-first records and Google Drive snapshots are separated.</p></article>
-          <article class="fact-card"><strong><a href="../en/reviewer-kit.html">RouteTracker reviewer kit</a></strong><p>Check product facts, tier boundaries, original screenshots, evaluation steps, and limitations.</p></article>
-          <article class="fact-card"><strong><a href="../en/changelog.html">Public changelog</a></strong><p>Review verified public iPhone and Android changes and platform-specific release boundaries.</p></article>
+        <div class="faq-list">
+          <details open>
+            <summary>What is RouteTracker?</summary>
+            <p>RouteTracker is a mobile app for recording hiking, cycling, running, and walking routes, then reviewing completed activities with maps, calendar history, core stats, GPX files, and notes.</p>
+          </details>
+          <details>
+            <summary>Where is RouteTracker currently available?</summary>
+            <p>RouteTracker is available for iPhone on the App Store and for Android on Google Play.</p>
+          </details>
+          <details>
+            <summary>Where is activity data stored?</summary>
+            <p>Activity data stays on the device unless the user chooses backup. When backup is enabled, RouteTracker stores and restores snapshots within the user-approved Google Drive scope.</p>
+          </details>
+          <details>
+            <summary>How are Plus and Pro different?</summary>
+            <p>Plus focuses on keeping and protecting activity history with ad removal, file attachments, and Google Drive backup and restore. Pro includes Plus and adds route planning, advanced maps, deeper analysis, and Local AI insights.</p>
+          </details>
         </div>
       </div>
     </section>
 
-    <section id="faq">
+    <section aria-label="RouteTracker selection and feature guides">
       <div class="wrap">
-        <div class="section-heading"><h2>Frequently asked questions</h2><p class="lead">Short answers for people comparing route-tracking apps.</p></div>
-        <div class="faq-list">
-          <details open><summary>What is RouteTracker?</summary><p>RouteTracker is an iPhone and Android app for recording hiking, cycling, running, and walking routes, then reviewing completed activities with maps, calendar history, core metrics, GPX files, and notes.</p></details>
-          <details><summary>Does RouteTracker support GPX import and export?</summary><p>Yes. RouteTracker can import a GPX route, display it on the map while recording, and export a completed activity as a GPX file.</p></details>
-          <details><summary>Where are activity records stored?</summary><p>Core activity records stay on the device until you choose backup. Plus and Pro support user-approved Google Drive backup and restore.</p></details>
-          <details><summary>When might RouteTracker not be the right fit?</summary><p>RouteTracker focuses on personal route records and activity review. It is not a medical device, rescue service, safety guarantee, social feed, club, or leaderboard product.</p></details>
+        <div class="section-heading">
+          <h2>App selection and feature guides</h2>
+          <p class="lead">Compare selection criteria first, then review hiking, cycling, running, GPX, backup, and Local AI workflows.</p>
+        </div>
+        <div class="guide-grid">
+          <a class="guide-card" href="../guides/en/route-tracking-app-guide.html">
+            <strong>Hiking, cycling, and running app selection guide</strong>
+            <span>Compare recording, GPX, data storage, backup, offline preparation, analysis, and limitations.</span>
+          </a>
+          <a class="guide-card" href="../guides/en/hiking-route-tracker.html">
+            <strong>Hiking route tracking</strong>
+            <span>Review trail activities with maps, elevation, GPX, and notes.</span>
+          </a>
+          <a class="guide-card" href="../guides/en/cycling-route-tracker.html">
+            <strong>Cycling route tracking</strong>
+            <span>Manage ride routes, speed, elevation, and repeated-record analysis.</span>
+          </a>
+          <a class="guide-card" href="../guides/en/running-route-tracker.html">
+            <strong>Running route tracking</strong>
+            <span>Organize completed runs with pace, distance, and recap cards.</span>
+          </a>
+          <a class="guide-card" href="../guides/en/gpx-import-export-hiking-cycling-running.html">
+            <strong>GPX import and export</strong>
+            <span>View GPX routes on the map and export completed records as GPX.</span>
+          </a>
+          <a class="guide-card" href="../guides/en/google-drive-backup-route-records.html">
+            <strong>Google Drive backup</strong>
+            <span>Review device-based storage and user-approved Google Drive backup.</span>
+          </a>
+          <a class="guide-card" href="../guides/en/local-ai-insights.html">
+            <strong>Local AI insights</strong>
+            <span>Check what Pro on-device AI summarizes and where its limits are.</span>
+          </a>
+          <a class="guide-card" href="../en/changelog.html">
+            <strong>Public changelog</strong>
+            <span>Review verified changes and release boundaries for public iPhone and Android versions.</span>
+          </a>
+          <a class="guide-card" href="../en/reviewer-kit.html">
+            <strong>Reviewer kit</strong>
+            <span>Find product facts, a test workflow, original screenshots, and limitations for independent evaluation.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="RouteTracker official blog">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>RouteTracker usage and product decisions</h2>
+          <p class="lead">First-party articles with real product screens, step-by-step workflows, subscription boundaries, and explicit limitations.</p>
+        </div>
+        <div class="guide-grid">
+          <a class="guide-card" href="../en/blog/first-hike-ride-run-recording-checklist.html">
+            <strong>Seven checks before your first recording</strong>
+            <span>Review location permission, a short test, normal completion, recap output, and GPX before a long activity.</span>
+          </a>
+          <a class="guide-card" href="../en/blog/gpx-import-follow-export-workflow.html">
+            <strong>The complete GPX round trip</strong>
+            <span>Separate a reference route from the real GPS track, then verify the completed GPX export.</span>
+          </a>
+          <a class="guide-card" href="../en/blog/device-first-google-drive-backup-boundary.html">
+            <strong>Device-first records and Drive backup</strong>
+            <span>Understand local default storage, Plus and Pro snapshots, and the checks required before restore.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Support links">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Support and policy documents</h2>
+          <p class="lead">Review how data is handled and the terms that apply before using the app.</p>
+        </div>
+        <div class="support-links">
+          <a class="support-link" href="../privacy_policy_en.html">
+            <strong>Privacy Policy</strong>
+            <span>Privacy details</span>
+          </a>
+          <a class="support-link" href="../terms_of_use_en.html">
+            <strong>Terms of Use</strong>
+            <span>Usage terms</span>
+          </a>
+          <a class="support-link" href="mailto:hayannamuapps@gmail.com">
+            <strong>Contact</strong>
+            <span>hayannamuapps@gmail.com</span>
+          </a>
+          <div class="support-link">
+            <strong>Store availability</strong>
+            <span>iPhone App Store and Android Google Play availability are handled from this page.</span>
+          </div>
         </div>
       </div>
     </section>
@@ -205,9 +1022,19 @@
 
   <footer class="footer">
     <div class="wrap">
-      <span>Copyright 2026 RouteTracker - HayanNamuApps</span>
-      <span class="footer-links"><a href="../privacy_policy_en.html">Privacy</a><a href="../terms_of_use_en.html">Terms</a><a href="../en/blog/">Blog</a><a href="mailto:hayannamuapps@gmail.com">Contact</a><a href="../">한국어</a></span>
+      <span>©</span> <span id="year"></span> RouteTracker. All rights reserved.
+      <a href="../terms_of_use_en.html">Terms</a>
+      <a href="../privacy_policy_en.html">Privacy</a>
+      <a href="../en/blog/index.html">Blog</a>
+      <a href="../en/changelog.html">Changelog</a>
+      <a href="../en/reviewer-kit.html">Reviewer kit</a>
     </div>
   </footer>
+
+  <script src="../utm.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    if (window.RouteTrackerUtm) window.RouteTrackerUtm.applyIncomingAttributionToStoreLinks();
+  </script>
 </body>
 </html>
