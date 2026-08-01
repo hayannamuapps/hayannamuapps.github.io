@@ -8,6 +8,9 @@
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#0f766e">
   <link rel="canonical" href="https://hayannamuapps.github.io/">
+  <link rel="alternate" hreflang="ko" href="https://hayannamuapps.github.io/">
+  <link rel="alternate" hreflang="en" href="https://hayannamuapps.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://hayannamuapps.github.io/en/">
   <link rel="alternate" type="application/rss+xml" title="RouteTracker 공식 블로그" href="https://hayannamuapps.github.io/blog/feed.xml">
   <link rel="alternate" type="application/rss+xml" title="RouteTracker official blog" href="https://hayannamuapps.github.io/en/blog/feed.xml">
   <meta property="og:type" content="website">
@@ -48,7 +51,7 @@
           "name": "RouteTracker",
           "url": "https://hayannamuapps.github.io/",
           "description": "RouteTracker is the official support and marketing site for the iPhone and Android route tracking app.",
-          "inLanguage": ["ko", "en"],
+          "inLanguage": "ko",
           "publisher": {
             "@id": "https://hayannamuapps.github.io/#organization"
           },
@@ -297,6 +300,9 @@
     }
 
     .language-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       min-width: 42px;
       min-height: 30px;
       border: 0;
@@ -307,7 +313,7 @@
       font: inherit;
       font-size: 13px;
       font-weight: 800;
-      cursor: pointer;
+      text-decoration: none;
     }
 
     .language-button.is-active {
@@ -754,8 +760,8 @@
           <a href="mailto:hayannamuapps@gmail.com" data-i18n="navContact">문의</a>
         </nav>
         <div class="language-toggle" aria-label="Language" data-i18n-attr="aria-label:languageAria">
-          <button class="language-button" type="button" data-language-button="ko" lang="ko">KO</button>
-          <button class="language-button" type="button" data-language-button="en" lang="en">EN</button>
+          <a class="language-button" href="./" data-language-button="ko" lang="ko">KO</a>
+          <a class="language-button" href="en/" data-language-button="en" lang="en">EN</a>
         </div>
       </div>
     </div>
@@ -1303,7 +1309,7 @@
       document.querySelectorAll("[data-language-button]").forEach((button) => {
         const active = button.getAttribute("data-language-button") === selected;
         button.classList.toggle("is-active", active);
-        button.setAttribute("aria-pressed", String(active));
+        button.setAttribute("aria-current", active ? "page" : "false");
       });
 
       localStorage.setItem("routeTrackerLanguage", selected);
@@ -1318,9 +1324,6 @@
     const initialLanguage = messages[urlLanguage] ? urlLanguage : savedLanguage || browserLanguage;
 
     document.getElementById("year").textContent = new Date().getFullYear();
-    document.querySelectorAll("[data-language-button]").forEach((button) => {
-      button.addEventListener("click", () => applyLanguage(button.getAttribute("data-language-button")));
-    });
     applyLanguage(initialLanguage);
   </script>
 </body>
