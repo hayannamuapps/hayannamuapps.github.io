@@ -6,6 +6,13 @@
     <description>RouteTracker how-to and product engineering notes</description>
     <language>en-US</language>
     <item>
+      <title>How to compare speed and pace on a repeated cycling or running route</title>
+      <link>https://hayannamuapps.github.io/en/blog/repeated-route-pace-speed-comparison.html</link>
+      <guid isPermaLink="true">https://hayannamuapps.github.io/en/blog/repeated-route-pace-speed-comparison.html</guid>
+      <description>Learn how RouteTracker compares a current cycling or running record with a similar previous route using split speed or pace and growth charts, including the Pro boundary and the limits of GPS-based comparison.</description>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
       <title>The full GPX import, follow, record, and export workflow</title>
       <link>https://hayannamuapps.github.io/en/blog/gpx-import-follow-export-workflow.html</link>
       <guid isPermaLink="true">https://hayannamuapps.github.io/en/blog/gpx-import-follow-export-workflow.html</guid>

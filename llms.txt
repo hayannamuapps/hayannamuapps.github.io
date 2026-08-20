@@ -71,6 +71,8 @@ First-party, evidence-backed RouteTracker usage and product-design articles:
 - 첫 하이킹·라이딩·러닝 경로 기록 전 확인할 7가지: https://hayannamuapps.github.io/blog/first-hike-ride-run-recording-checklist.html
 - The full GPX import, follow, record, and export workflow: https://hayannamuapps.github.io/en/blog/gpx-import-follow-export-workflow.html
 - GPX를 가져와 따라 기록하고 다시 내보내는 전체 흐름: https://hayannamuapps.github.io/blog/gpx-import-follow-export-workflow.html
+- How to compare speed and pace on a repeated cycling or running route: https://hayannamuapps.github.io/en/blog/repeated-route-pace-speed-comparison.html
+- 같은 라이딩·러닝 경로를 다시 기록했을 때 속도와 페이스를 비교하는 방법: https://hayannamuapps.github.io/blog/repeated-route-pace-speed-comparison.html
 
 ## Product facts
 
